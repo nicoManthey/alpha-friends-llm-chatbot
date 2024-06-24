@@ -1,0 +1,142 @@
+[
+
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das Gefühl habe ich auch ziemlich oft, ich würde sagen fast jeden Tag.",
+        "output": "Verstanden, fast jeden Tag. Ich vermerke 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Vereinzelt, aber das ist selten.",
+        "output": "Verstanden, vereinzelt. Ich vermerke 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin oft abgelenkt, aber nicht immer.",
+        "output": "War das auch in der letzten Woche so? Wie oft hattest Du da Schwierigkeiten Dich zu konzentrieren?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Naja, letzte Woche war es eher selten der Fall.",
+        "output": "Verstanden, ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Ich bin oft abgelenkt, aber nicht immer.",
+                "War das auch in der letzten Woche so? Wie oft hattest Du da Schwierigkeiten Dich zu konzentrieren?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich kann mich fast nie konzentrieren, besonders wenn ich gestresst bin.",
+        "output": "Verstanden, du kannst dich fast nie konzentrieren. Also hast du beinahe jeden Tag Schwierigkeiten. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal verliere ich den Faden, aber meistens geht es.",
+        "output": "Okay, manchmal. Soll ich 'an einzelnen Tagen' aufschreiben?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, an einzelnen Tagen trifft zu.",
+        "output": "Okay, ich schreibe 'an einzelnen Tagen' auf.?",
+        "history": [
+            [
+                "Manchmal verliere ich den Faden, aber meistens geht es.",
+                "Okay, manchmal. Soll ich 'an einzelnen Tagen' aufschreiben?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In letzter Zeit hatte ich oft Schwierigkeiten, mich zu konzentrieren.",
+        "output": "Verstanden, oft Konzentrationsschwierigkeiten. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin fast jeden Tag zerstreut.",
+        "output": "Alles klar, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, ich bin normalerweise ziemlich fokussiert.",
+        "output": "Verstanden, nur selten. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt vor, besonders wenn ich gestresst bin.",
+        "output": "Okay, es kommt vor. Soll ich 'an einzelnen Tagen' notieren?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, schreib 'an einzelnen Tagen' auf.",
+        "output": "Okay, ich hab 'an einzelnen Tagen' aufgeschrieben.",
+        "history": [
+            [
+                "Es kommt vor, besonders wenn ich gestresst bin.",
+                "Okay, es kommt vor. Soll ich 'an einzelnen Tagen' notieren?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast jeden Tag, besonders morgens.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In letzter Zeit hatte ich keine Probleme, mich zu konzentrieren.",
+        "output": "Gut, keine Probleme. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin normalerweise ziemlich fokussiert.",
+        "output": "Verstanden, normalerweise fokussiert. Soll ich 'überhaupt nicht' notieren?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja.",
+        "output": "Verstanden, ich notiere 'überhaupt nicht'.?",
+        "history": [
+            [
+                "Ich bin normalerweise ziemlich fokussiert.",
+                "Verstanden, normalerweise fokussiert. Soll ich 'überhaupt nicht' notieren?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Einige Male, besonders wenn ich gestresst bin.",
+        "output": "Alles klar, einige Male. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    }
+]

@@ -1,0 +1,112 @@
+Ich baue eine App, die den Benutzer den PHQ-9 Fragebogen (Patient Health Questionnaire-9) abfragt. Dazu habe ich folgendes JSON, welches ein LLM Datenset im alpaca format ist. Unter system steht immer die aktuelle Frage. Unter instruction ist die Aussage des Benutzers, die bewertet werden soll. Unter output ist die Aussage des Therapeuten, welche eine Antwort auf die Aussage des Benutzers ist. Die history gilt jeweils nur für die aktuelle Frage. Der Benutzer soll angeben, wie häufig er sich letzte Woche der Frage entsprechend gefühlt hat.
+
+Dies sind die erlaubten Antwortmöglichkeiten:
+Überhaupt nicht
+An einzelnen Tagen
+An mehr als der Hälfte der Tage
+Beinahe jeden Tag
+
+PHQ-9 Fragen:
+1: Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten?
+2: Wie oft warst Du niedergeschlagen oder hoffnungslos?
+3: Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen?
+4: Wie oft warst Du müde oder energielos?
+5: Wie häufig hattest Du weniger oder zu viel Appetit?
+6: Wie oft hattest Du eine schlechte Meinung von Dir selbst?
+7: Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren?
+8: Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt?
+9: Wie häufig hattest Du lebensmüde Gedanken?
+
+Antwortmöglichkeit: Überhaupt nicht
+
+    Nein, das hatte ich nicht.
+    Gar nicht.
+    Keine Probleme gehabt.
+    Das habe ich nicht erlebt.
+    Überhaupt nicht.
+    Nein, niemals.
+    Nie passiert.
+    Nein, nicht wirklich.
+    Nein, gar nicht.
+    Kein einziges Mal.
+    Nie gespürt.
+    Gar nicht gefühlt.
+    Nie passiert.
+    Nicht ein einziges Mal.
+    Keine Probleme damit.
+    Nicht einmal.
+    Nie bemerkt.
+    Kein einziges Mal vorgekommen.
+    Keine Spur davon.
+
+Antwortmöglichkeit: An einzelnen Tagen
+
+    Ein paar Mal.
+    Manchmal, aber selten.
+    Ab und zu.
+    Einige Male.
+    Gelegentlich.
+    Selten.
+    Hin und wieder.
+    Nur manchmal.
+    Ab und an.
+    Einige Male.
+    Nur ab und zu.
+    Manchmal, aber nicht oft.
+    Hier und da.
+    Nur selten.
+    Ein paar Mal pro Woche.
+    Selten, aber passiert.
+    Gelegentlich gespürt.
+    An einigen Tagen.
+    Manchmal ja, manchmal nein.
+
+Antwortmöglichkeit: An mehr als der Hälfte der Tage
+
+    Meistens.
+    Oft.
+    Häufig.
+    Die meiste Zeit.
+    Fast täglich.
+    An den meisten Tagen.
+    Regelmäßig.
+    Mehrmals die Woche.
+    Ziemlich oft.
+    Mehr als die Hälfte der Woche.
+    Häufiger als nicht.
+    Sehr oft.
+    Fast jeden zweiten Tag.
+    Mehr als regelmäßig.
+    Oftmals.
+    Meistens vorhanden.
+    Immer wieder.
+    An den meisten Tagen der Woche.
+    Häufig erlebt.
+
+Antwortmöglichkeit: Beinahe jeden Tag
+
+    Fast immer.
+    Täglich.
+    Jeden Tag.
+    Ständig.
+    Dauerhaft.
+    Immer wieder.
+    Immer.
+    Jeden einzelnen Tag.
+    Ohne Pause.
+    So gut wie jeden Tag.
+    Jeden Tag spürbar.
+    Täglich erlebt.
+    Immer präsent.
+    Jeden einzelnen Tag gespürt.
+    Ununterbrochen.
+    Ständig vorhanden.
+    Ohne Unterbrechung.
+    Fast immer da.
+    Dauerhaft gespürt.
+
+---------------------
+Ich baue eine App, die den Benutzer den PHQ-9 Fragebogen (Patient Health Questionnaire-9) abfragt. Dazu habe ich folgendes JSON, welches ein LLM Datenset im alpaca format ist. Unter system steht immer die aktuelle Frage. Unter instruction ist die Aussage des Benutzers, die bewertet werden soll. Unter output ist die Aussage des Therapeuten, welche eine Antwort auf die Aussage des Benutzers ist. Die history gilt jeweils nur für die aktuelle Frage. Der Benutzer soll angeben, wie häufig er sich letzte Woche der Frage entsprechend gefühlt hat.
+
+Nimm das JSON als Beispiel und baue ein ähnliches. Dieses mal ist der key system jedes mal "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen?" Du kannst ruhig kreativ sein bei den Benutzerantworten (key instruction). Der Therapeut soll sich dementsprechend professionell verhalten (key output).
+---------------------

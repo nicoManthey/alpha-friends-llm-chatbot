@@ -1,0 +1,190 @@
+[
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe oft zu viel, das passiert andauernd.",
+        "output": "Gut, andauernd. Ich halte fest 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Kein einziges Mal, ich fühle mich immer energiegeladen.",
+        "output": "Gut, kein einziges Mal. Ich halte fest 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das kommt oft vor, besonders wenn ich viel zu tun habe.",
+        "output": "Wir fokussieren uns auf die letzte Woche. Wie oft warst Du da müde oder energielos?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Oh, in der letzten Woche? Fast jeden Tag.",
+        "output": "Ich habe notiert: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Das kommt oft vor, besonders wenn ich viel zu tun habe.",
+                "Wir fokussieren uns auf die letzte Woche. Wie oft warst Du da müde oder energielos?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich fühle mich fast jeden Tag erschöpft.",
+        "output": "Verstanden, fast jeden Tag erschöpft. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur manchmal, wenn ich viel gearbeitet habe.",
+        "output": "Verstanden, manchmal bei viel Arbeit. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich habe die meiste Zeit Energie, aber manchmal bin ich doch müde.",
+        "output": "Könntest du das genauer beschreiben? Heißt das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In Bezug auf letzte Woche, eher an mehr als der Hälfte der Tage.",
+        "output": "Alles klar. Ich habe 'an mehr als der Hälfte der Tage' notiert.",
+        "history": [
+            [
+                "Ich habe die meiste Zeit Energie, aber manchmal bin ich doch müde.",
+                "Könntest du das genauer beschreiben? Heißt das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich fühle mich fast die ganze Zeit schlapp.",
+        "output": "Verstanden, fast die ganze Zeit. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur ab und zu, wenn ich schlecht geschlafen habe.",
+        "output": "Verstanden, ab und zu bei schlechtem Schlaf. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es wechselt, manchmal habe ich viel Energie, manchmal gar keine.",
+        "output": "Versuche dich an die letzte Woche zu erinnern. Wie oft warst du müde oder energielos?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich jeden Tag, ich bin ständig müde.",
+        "output": "Verstanden, jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Es wechselt, manchmal habe ich viel Energie, manchmal gar keine.",
+                "Versuche dich an die letzte Woche zu erinnern. Wie oft warst du müde oder energielos?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich habe meistens genug Energie, nur selten fühle ich mich müde.",
+        "output": "Okay, meistens genug Energie, nur selten müde. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin fast nie müde, nur gelegentlich.",
+        "output": "Verstanden, fast nie müde, nur gelegentlich energielos. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal letzte Woche, vielleicht zwei oder drei Tage.",
+        "output": "Okay, zwei oder drei Tage. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Sehr selten, ich fühle mich fast immer fit.",
+        "output": "Alles klar, fast immer fit. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Mehr als die Hälfte der Woche war ich ziemlich erschöpft.",
+        "output": "Okay, mehr als die Hälfte der Woche. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jeden Tag schwierig, besonders nachmittags.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war ich nur einmal müde.",
+        "output": "Verstanden, nur einmal müde. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders nach einem anstrengenden Tag.",
+        "output": "Okay, häufig nach anstrengenden Tagen. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, ich habe meistens genug Energie.",
+        "output": "Alles klar, selten müde, meist genug Energie. Soll ich 'an einzelnen Tagen' aufschreiben oder 'überhaupt nicht'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "An einzelnen Tagen.",
+        "output": "Okay, ich schreibe 'an einzelnen Tagen' auf.",
+        "history": [
+            [
+                "Nur selten, ich habe meistens genug Energie.",
+                "Alles klar, selten müde, meist genug Energie. Soll ich 'an einzelnen Tagen' aufschreiben oder 'überhaupt nicht'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt immer wieder vor, dass ich mich müde fühle.",
+        "output": "Okay, es kommt immer wieder vor. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin oft müde, besonders wenn ich wenig Schlaf bekomme.",
+        "output": "Verstanden, oft müde bei wenig Schlaf. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    }
+]

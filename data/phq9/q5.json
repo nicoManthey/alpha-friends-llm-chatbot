@@ -1,0 +1,188 @@
+[
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Oh, das ist definitiv die ganze Zeit.",
+        "output": "Verstanden, die ganze Zeit. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ab und zu, aber nicht oft.",
+        "output": "Verstanden, ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Mein Appetit schwankt immer.",
+        "output": "In Bezug auf die letzte Woche, wie oft hattest Du da weniger oder zu viel Appetit?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In der letzten Woche war es an ein paar Tagen so.",
+        "output": "Ich notiere: 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Mein Appetit schwankt immer.",
+                "In Bezug auf die letzte Woche, wie oft hattest Du da weniger oder zu viel Appetit?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe ständig Heißhunger und esse viel mehr als normalerweise.",
+        "output": "Gut, ständig Heißhunger. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe kaum Appetit und esse fast gar nichts.",
+        "output": "Verstanden, fast gar nichts. Ich halte fest 'gar nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In stressigen Phasen esse ich viel mehr als normalerweise.",
+        "output": "Wir betrachten hier die letzte Woche. Wie häufig hattest du da weniger oder zu viel Appetit?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Oh, in der letzten Woche? Fast jeden Tag.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'fast jeden Tag'.",
+        "history": [
+            [
+                "In stressigen Phasen esse ich viel mehr als normalerweise.",
+                "Wir betrachten hier die letzte Woche. Wie häufig hattest du da weniger oder zu viel Appetit?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse nur, wenn ich wirklich hungrig bin, also eher selten.",
+        "output": "Verstanden, eher selten. Ich halte fest 'gar nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Normalerweise habe ich einen regelmäßigen Appetit, außer wenn ich gestresst bin.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In der letzten Woche war es eher an den meisten Tagen.",
+        "output": "Alles klar. Ich notiere 'an den meisten Tagen'.",
+        "history": [
+            [
+                "Normalerweise habe ich einen regelmäßigen Appetit, außer wenn ich gestresst bin.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe in letzter Zeit ständig Lust auf Süßigkeiten und nasche oft.",
+        "output": "Gut, ständig Lust auf Süßigkeiten. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse immer dann, wenn ich gestresst bin, also ziemlich oft.",
+        "output": "Verstanden, ziemlich oft. Ich halte fest 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In der Regel esse ich nur, wenn ich hungrig bin, also eher selten.",
+        "output": "Wir betrachten die letzten sieben Tage. Wie häufig hattest du da weniger oder zu viel Appetit?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Fast jeden Tag verspüre ich einen starken Appetit, vor allem auf herzhafte Speisen.",
+        "output": "Verstanden, fast jeden Tag starken Appetit auf herzhafte Speisen. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe oft das Bedürfnis, meine Emotionen durch Essen zu kontrollieren.",
+        "output": "Verstanden, oft das Bedürfnis, Emotionen durch Essen zu kontrollieren. Ich notiere 'an den meisten Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Normalerweise esse ich regelmäßig, aber in letzter Zeit habe ich oft keinen Appetit.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'gar nicht'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Meistens esse ich nur zu den Hauptmahlzeiten, aber manchmal snacke ich zwischendurch.",
+        "output": "Alles klar. Ich notiere 'an einigen Tagen'.",
+        "history": [
+            [
+                "Normalerweise esse ich regelmäßig, aber in letzter Zeit habe ich oft keinen Appetit.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'gar nicht'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse oft aus Langeweile, nicht weil ich hungrig bin.",
+        "output": "Verstanden, oft aus Langeweile. Ich notiere 'an den meisten Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich fühle mich oft traurig und esse dann sehr wenig.",
+        "output": "Okay, sehr wenig. Ich halte fest 'an den meisten Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Normalerweise habe ich einen guten Appetit, aber wenn ich gestresst bin, verliere ich ihn völlig.",
+        "output": "Verstanden. Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In der letzten Woche war es meistens so, dass ich kaum Appetit hatte.",
+        "output": "Alles klar. Ich notiere 'an den meisten Tagen'.",
+        "history": [
+            [
+                "Normalerweise habe ich einen guten Appetit, aber wenn ich gestresst bin, verliere ich ihn völlig.",
+                "Verstanden. Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse oft, wenn ich gelangweilt oder gestresst bin, also ziemlich häufig.",
+        "output": "Verstanden, ziemlich häufig. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    }
+]

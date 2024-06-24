@@ -1,0 +1,180 @@
+[
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Hm, ich würde sagen, fast jeden Tag.",
+        "output": "Alles klar, fast jeden Tag. Ich schreibe auf 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal, aber nicht so oft.",
+        "output": "Alles klar, manchmal. Ich schreibe auf 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das ist schwer zu sagen, manchmal mehr, manchmal weniger.",
+        "output": "Geh im Kopf noch mal die letzte Woche durch. Wie oft warst Du da niedergeschlagen oder hoffnungslos?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das ist fast mein Normalzustand, also eigentlich beinahe jeden Tag.",
+        "output": "Ich habe notiert: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Das ist schwer zu sagen, manchmal mehr, manchmal weniger.",
+                "Geh im Kopf noch mal die letzte Woche durch. Wie oft warst Du da niedergeschlagen oder hoffnungslos?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast jeden Tag, besonders abends.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich nie, ich fühle mich ziemlich gut.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ab und zu, wenn ich alleine bin.",
+        "output": "Okay, ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast nie, nur ganz selten.",
+        "output": "Alles klar, fast nie. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche an drei Tagen.",
+        "output": "Okay, drei Tage. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich fast immer, besonders wenn es stressig wird.",
+        "output": "Verstanden, fast immer. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal, aber es geht meistens schnell vorbei.",
+        "output": "Alles klar, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "An mehr als der Hälfte der Tage, besonders nach der Arbeit.",
+        "output": "Okay, an mehr als der Hälfte der Tage. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt selten vor, vielleicht ein oder zwei Mal letzte Woche.",
+        "output": "Alles klar, ein oder zwei Mal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Immer wieder, es scheint nie aufzuhören.",
+        "output": "Okay, immer wieder. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es meistens okay, außer an zwei Tagen.",
+        "output": "Verstanden, an zwei Tagen. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jeden Tag, besonders wenn es regnete.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, vielleicht einmal die Woche.",
+        "output": "Alles klar, selten. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "An mehr als der Hälfte der Tage, meistens abends.",
+        "output": "Verstanden, an mehr als der Hälfte der Tage. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich weiß nicht, es schwankt sehr.",
+        "output": "Versuche dich an letzte Woche zu erinnern. Wie oft war es da?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Vielleicht so drei oder vier Mal.",
+        "output": "Okay, drei oder vier Mal. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": [
+            [
+                "Ich weiß nicht, es schwankt sehr.",
+                "Versuche dich an letzte Woche zu erinnern. Wie oft war es da?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast immer, es war eine schwere Woche.",
+        "output": "Okay, fast immer. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war ich nur einmal wirklich niedergeschlagen.",
+        "output": "Alles klar, nur einmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal fühle ich mich so, aber nicht oft.",
+        "output": "Okay, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders wenn ich alleine bin.",
+        "output": "Okay, häufig. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    }
+]

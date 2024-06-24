@@ -1,0 +1,35 @@
+[
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich glaube, das passiert meistens.",
+        "output": "Verstanden, meistens. Ich schreibe 'an mehr als der Hälfte der Tage' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nie, das ist mir noch nie passiert.",
+        "output": "Verstanden, nie. Ich schreibe 'überhaupt nicht' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das möchte ich eigentlich nicht sagen.",
+        "output": "Es hilft bei der psychologischen Behandlung. Wie oft hattest Du in der letzten Woche solche Gedanken?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In der letzten Woche war es einmal so.",
+        "output": "Ich habe 'an einzelnen Tagen' notiert.",
+        "history": [
+            [
+                "Das möchte ich eigentlich nicht sagen.",
+                "Es hilft bei der psychologischen Behandlung. Wie oft hattest Du in der letzten Woche solche Gedanken?"
+            ]
+        ]
+    }
+]

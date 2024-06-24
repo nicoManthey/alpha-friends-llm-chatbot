@@ -1,5 +1,8 @@
 # alpha-friends-llm-chatbot
 
+The repo contains a streamlit app in which you can chat with an LLM that should be used in Alpha friends questionnaires.
+
+TODO: more readme.
 
 
 ## Getting started

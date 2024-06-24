@@ -1,0 +1,145 @@
+[
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich glaube, das trifft ebenfalls fast jeden Tag zu.",
+        "output": "Verstanden, ebenfalls fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Sporadisch, hin und wieder mal.",
+        "output": "Verstanden, sporadisch. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe meistens schlecht, aber manchmal geht es auch.",
+        "output": "Ich bin mir nicht ganz sicher, wie ich das bewerten soll. In Bezug auf letzte Woche, heißt das an mehr als der Hälfte der Tage oder beinahe jeden Tag?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In Bezug auf letzte Woche eher an mehr als der Hälfte der Tage.",
+        "output": "Alles klar. Ich habe 'an mehr als der Hälfte der Tage' notiert.",
+        "history": [
+            [
+                "Ich schlafe meistens schlecht, aber manchmal geht es auch.",
+                "Ich bin mir nicht ganz sicher, wie ich das bewerten soll. In Bezug auf letzte Woche, heißt das an mehr als der Hälfte der Tage oder beinahe jeden Tag?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich habe fast jede Nacht Probleme einzuschlafen.",
+        "output": "Alles klar, fast jede Nacht. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur manchmal, wenn ich Stress habe.",
+        "output": "Verstanden, manchmal bei Stress. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es wechselt, manchmal schlafe ich zu viel, manchmal gar nicht.",
+        "output": "Versuche dich an die letzte Woche zu erinnern. Wie oft hattest du Schlafprobleme oder hast zu viel geschlafen?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich jeden Tag, mein Schlafrhythmus ist völlig durcheinander.",
+        "output": "Verstanden, jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Es wechselt, manchmal schlafe ich zu viel, manchmal gar nicht.",
+                "Versuche dich an die letzte Woche zu erinnern. Wie oft hattest du Schlafprobleme oder hast zu viel geschlafen?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich kann meistens gut schlafen, nur ab und zu nicht.",
+        "output": "Okay, meistens gut schlafen. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe fast jede Nacht durch, keine Probleme.",
+        "output": "Verstanden, keine Probleme. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal letzte Woche, vielleicht drei Nächte.",
+        "output": "Okay, drei Nächte. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Sehr selten, ich schlafe fast immer gut.",
+        "output": "Alles klar, du schläfst fast immer gut. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Mehr als die Hälfte der Woche hatte ich Schwierigkeiten, einzuschlafen.",
+        "output": "Okay, mehr als die Hälfte der Woche. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jede Nacht schwer, besonders wenn ich spät ins Bett ging.",
+        "output": "Okay, fast jede Nacht. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war gut, nur eine Nacht war schwierig.",
+        "output": "Verstanden, eine schwierige Nacht. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders wenn ich zu viel nachdenke.",
+        "output": "Okay, häufig bei zu viel Nachdenken. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, eigentlich schlafe ich ganz gut.",
+        "output": "Alles klar, selten, eigentlich schläfst du gut. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt immer wieder vor, dass ich nicht einschlafen kann.",
+        "output": "Okay, es kommt immer wieder vor. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe oft zu viel, besonders am Wochenende.",
+        "output": "Verstanden, oft zu viel schlafen. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    }
+]

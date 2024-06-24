@@ -1,0 +1,35 @@
+[
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, das passiert auch fast jeden Tag.",
+        "output": "Alles klar, fast jeden Tag. Ich halte fest 'beinahe jden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Kein einziges Mal, ich bin immer fokussiert.",
+        "output": "Alles klar, kein einziges Mal. Ich halte fest 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das wechselt ständig.",
+        "output": "Denk an die letzte Woche. Wie oft war es da der Fall?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche? Andauernd.",
+        "output": "Okay, ich notiere: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Das wechselt ständig.",
+                "Denk an die letzte Woche. Wie oft war es da der Fall?"
+            ]
+        ]
+    }
+]

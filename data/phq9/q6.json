@@ -1,0 +1,143 @@
+[
+
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich esse eigentlich viel weniger als sonst, aber nicht jeden Tag. Oft trifft es eher.",
+        "output": "Okay, oft. Ich schreibe 'an mehr als der Hälfte der Tage' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Gar nicht, ich habe immer eine positive Meinung von mir.",
+        "output": "Okay, gar nicht. Ich schreibe 'überhaupt nicht' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal denke ich, ich bin nicht gut genug.",
+        "output": "Wenn Du an die letzte Woche denkst, wie oft hattest Du diese Gedanken?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es besonders schlimm, fast jeden Tag.",
+        "output": "Okay, ich notiere: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Manchmal denke ich, ich bin nicht gut genug.",
+                "Wenn Du an die letzte Woche denkst, wie oft hattest Du diese Gedanken?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Immer, ich zweifle oft an mir.",
+        "output": "Verstanden, oft. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ab und zu, aber meistens denke ich positiv.",
+        "output": "Verstanden, ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich denke selten negativ über mich selbst nach.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'überhaupt nicht' oder 'an einzelnen Tagen'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Überhaupt nicht.",
+        "output": "Okay, überhaupt nicht. Ich notiere 'überhaupt nicht'.",
+        "history": [
+            [
+                "Ich denke selten negativ über mich selbst nach.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'überhaupt nicht' oder 'an einzelnen Tagen'?"
+            ]
+        ]
+    },
+
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In letzter Zeit habe ich oft negative Gedanken über mich.",
+        "output": "Gut, oft negative Gedanken. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich zweifle manchmal an mir, aber ich arbeite daran, positiver zu denken.",
+        "output": "Verstanden, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Normalerweise denke ich positiv, aber in letzter Zeit häufiger negativ.",
+        "output": "Versuch, speziell an letzte Woche zu denken. Wie oft war es da der Fall?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Schon oft.",
+        "output": "Gut, schon oft. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": [
+            [
+                "Normalerweise denke ich positiv, aber in letzter Zeit häufiger negativ.",
+                "Versuch, speziell an letzte Woche zu denken. Wie oft war es da der Fall?"
+            ]
+
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast jeden Tag denke ich schlecht über mich.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin normalerweise recht selbstbewusst, aber letzte Woche war ich oft unsicher.",
+        "output": "Gut, letzte Woche oft unsicher. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich zweifle oft an mir, fast jeden Tag.",
+        "output": "Verstanden, zweifle oft, fast jeden Tag. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Normalerweise denke ich positiv, aber letzte Woche war hart.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche hatte ich die ganze Zeit eine schlechte Meinung von mir.",
+        "output": "Okay, die ganze Zeit. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Normalerweise denke ich positiv, aber letzte Woche war hart.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?"]
+        ]
+    }
+]

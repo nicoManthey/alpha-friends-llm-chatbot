@@ -1,0 +1,221 @@
+[
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das passiert von Montag bis Freitag, also meistens.",
+        "output": "Okay, meistens. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Gar nicht, ich habe eigentlich immer Spaß an meinen Tätigkeiten.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das kommt ganz darauf an, was los ist.",
+        "output": "Es geht konkret um letzte Woche. Wie oft war es da der Fall?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche. Naja, von Montag bis Donnerstag. Am Wochenende war es besser.",
+        "output": "Okay, von Montag bis Donnerstag. Ich schreibe auf 'an mehr als der Hälfte der Tage'.",
+        "history": [
+            [
+                "Das kommt ganz darauf an, was los ist.",
+                "Es geht konkret um letzte Woche. Wie oft war es da der Fall?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nein, das habe ich nicht erlebt.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal, aber nicht ständig.",
+        "output": "Alles klar, ein paar Mal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast täglich, das war ziemlich schwer.",
+        "output": "Verstanden, fast täglich. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Immer wieder, es hört nie auf.",
+        "output": "Okay, immer wieder. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal pro Woche, aber nicht jeden Tag.",
+        "output": "Alles klar, ein paar Mal pro Woche. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nein, gar nicht.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast immer, es war eine harte Woche.",
+        "output": "Verstanden, fast immer. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur ab und zu, nicht oft.",
+        "output": "Alles klar, nur ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jeden Tag so.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal, aber nicht oft.",
+        "output": "Okay, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es passiert ab und an, nicht regelmäßig.",
+        "output": "Alles klar, ab und an. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nicht ein einziges Mal.",
+        "output": "Okay, kein einziges Mal. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders wenn viel los ist.",
+        "output": "Okay, häufig. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt drauf an, an manchen Tagen mehr, an anderen weniger.",
+        "output": "Kannst du mir sagen, wie oft es letzte Woche vorkam?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es nur an zwei Tagen so.",
+        "output": "Alles klar, an zwei Tagen. Ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Es kommt drauf an, an manchen Tagen mehr, an anderen weniger.",
+                "Alles klar, an zwei Tagen. Ich notiere 'an einzelnen Tagen'."
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich meistens, aber manchmal geht es auch.",
+        "output": "Geht es um die letzte Woche? Wie oft war es da?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es fast jeden Tag so, außer am Samstag.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Eigentlich meistens, aber manchmal geht es auch.",
+                "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'."
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich weiß nicht genau, vielleicht so zweimal?",
+        "output": "Also an zwei Tagen?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, letzte Woche waren es zwei Tage.",
+        "output": "Verstanden, zwei Tage. Ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Ich weiß nicht genau, vielleicht so zweimal?",
+                "Verstanden, zwei Tage. Ich notiere 'an einzelnen Tagen'."
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es schwankt, manchmal oft, manchmal weniger.",
+        "output": "Kannst du konkret sagen, wie oft letzte Woche?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es meistens so, außer am Sonntag.",
+        "output": "Okay, meistens außer am Sonntag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Es schwankt, manchmal oft, manchmal weniger.",
+                "Kannst du konkret sagen, wie oft letzte Woche?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das ist unterschiedlich.",
+        "output": "Versuch, dir die letzte Woche noch mal in den Kopf zu rufen.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche nur an einem Tag.",
+        "output": "Okay, nur an einem Tag. Ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Das ist unterschiedlich.",
+                "Versuch, dir die letzte Woche noch mal in den Kopf zu rufen. Wie oft war es da?"
+            ]
+        ]
+    }
+]

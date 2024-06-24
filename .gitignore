@@ -1,0 +1,18 @@
+__pycache__
+.pytest_cache
+
+# .env file
+.env
+
+# google sheets credentials
+google_sheets_credentials.json
+
+# python virtual environment
+.venv
+
+# exclude files
+run_vllm_openai.py
+transformers_hf_test.py
+
+# exclude folders
+eval_groq
