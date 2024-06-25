@@ -151,16 +151,16 @@ def chat(endpoint_helper: EH, sheet_helper: SH):
                     st.session_state.enter_pressed = False
                     st.rerun()
 
-        if False:
-            # TODO: Upload sample until last question to Google Sheets
-            # (or until 2nd last question if no new utterances were made after the last question)
-            # Button to upload chatbox to Google Sheets
-            if st.button("Upload Chatbox to Google Sheets"):
-                data_to_upload = chatbox.to_google_sheet_format()
-                sheet_helper.authorize()
-                sheet_helper.select_worksheet('streamlit-app')
-                sheet_helper.upload_data(data_to_upload)
-                st.success("Chatbox uploaded to Google Sheets.")
+        # TODO: Upload sample until last question to Google Sheets
+        # (or until 2nd last question if no new utterances were made after the last question)
+        # Button to upload chatbox to Google Sheets
+        if st.button("Upload Chatbox to Google Sheets (not ready yet)"):
+            pass
+            # data_to_upload = chatbox.to_google_sheet_format()
+            # sheet_helper.authorize()
+            # sheet_helper.select_worksheet('streamlit-app')
+            # sheet_helper.upload_data(data_to_upload)
+            # st.success("Chatbox uploaded to Google Sheets.")
 
 if __name__ == "__main__":
     main()
