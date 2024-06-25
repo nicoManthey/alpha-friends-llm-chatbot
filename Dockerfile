@@ -17,13 +17,11 @@ RUN apt-get update && \
 # Create and set the working directory
 WORKDIR /app
 
-# Install Python dependencies
-COPY requirements.txt /app/
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy everything from the current directory to /app in the container
+COPY . /app/
 
-# Copy the application files
-COPY app.py /app/
-COPY src /app/src
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port the app runs on
 EXPOSE 8501
