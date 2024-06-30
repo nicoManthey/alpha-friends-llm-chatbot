@@ -17,3 +17,4 @@ test_hf_embedding_endpoint.py
 
 # exclude folders
 eval_groq
+chat-gpt-conversation
