@@ -14,6 +14,13 @@ class ChatBox:
     def add_messages(self, *messages):
         self.messages += list(messages)
 
+    def remove_last_message(self, role: str):
+        """Remove the last message of the given role."""
+        for i in range(len(self.messages) - 1, -1, -1):
+            if self.messages[i].role == role:
+                self.messages.pop(i)
+                break
+
     def replace_last_bot_message(self, new_content):
         """Replace the last bot message with the user's input."""
         for i in range(len(self.messages) - 1, -1, -1):

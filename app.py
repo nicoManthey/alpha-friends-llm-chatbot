@@ -132,6 +132,7 @@ def chat(endpoint_helper: EH, sheet_helper: SH):
                             sheet_helper.upload_data(data_to_upload)
                         # Load next question and update chatbox
                         questionnaire.increment_question_idx()
+                        chatbox.remove_last_message("info")
                         info_message_upload = ChatMessage(role="info", content="Sample uploaded.")
                         first_messages = get_prompt_and_question_message(questionnaire)
                         messages = [info_message_upload] + first_messages
