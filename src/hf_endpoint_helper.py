@@ -18,11 +18,10 @@ HF_TOKEN_WRITE = env_vars["HF_TOKEN_WRITE"]
 LLM_REPO_NAME = env_vars["LLM_REPO_NAME"]
 
 
-hfh.login(token=HF_TOKEN_WRITE, write_permission=True)
+# hfh.login(token=HF_TOKEN_WRITE, write_permission=True)
 
 
-
-
+# CURRENTLY NOT USED (atm we use groq)
 class EndpointHelper:
     """A class to represent a HuggingFace endpoint helper.
     Implements:
@@ -41,7 +40,8 @@ class EndpointHelper:
     FAILED = "failed"
     SCALED_TO_ZERO = "scaledToZero"
     """
-    def __init__(self, token: str=HF_TOKEN_WRITE):
+
+    def __init__(self, token: str = HF_TOKEN_WRITE):
         self.token = token
         self.endpoint = hfh.get_inference_endpoint(LLM_REPO_NAME)
         print(f"endpoint: {self.endpoint}")
@@ -54,7 +54,9 @@ class EndpointHelper:
             try:
                 self.endpoint.resume()
             except BadRequestError as e:
-                print(f"Current endpoint status: {self.endpoint.status}. Got error: {e}")
+                print(
+                    f"Current endpoint status: {self.endpoint.status}. Got error: {e}"
+                )
 
     def get_llm_answer(self, messages: List[ChatMessage]) -> str:
         llm_input = self._make_llm_input(messages)
@@ -70,7 +72,7 @@ class EndpointHelper:
         # Step 1: Find the index of the last 'system' message
         last_system_index = None
         for i in range(len(messages) - 1, -1, -1):
-            if messages[i].role == 'system':
+            if messages[i].role == "system":
                 last_system_index = i
                 break
 

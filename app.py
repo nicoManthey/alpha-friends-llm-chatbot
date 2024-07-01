@@ -1,84 +1,63 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from huggingface_hub._inference_endpoints import InferenceEndpointStatus as IES
 
-from src.functions import get_prompt_and_question_message, extract_question_answer
 from src.streamlit_utils import message_to_markdown
 from src.chat_utils import ChatMessage, ChatBox
-from src.questionnaire import load_questionnaire, QUESTIONNAIRES
-from src.endpoint_helper import EndpointHelper as EH
+from src.questionnaire import QUESTIONNAIRES, Questionnaire
 from src.google_sheet_helper import GSheetHelper as SH
-
+from src.groq_request import get_groq_answer
 
 
 instructions = f"""
 ## alpha friends questionnaire chatbot
 
-### Instructions:
+### Anleitung:
 
-1. Choose the questionnaire you want to start by typing the name of the questionnaire.
-   This step is optional. The default questionnaire is PHQ9.
-   You can choose an other questionnaire at any time by typing the name of the questionnaire.
-   Available questionnaires: {", ".join(QUESTIONNAIRES)}.
-2. Answer the questions. The chatbot will guide you through the process.
-3. If you are not happy with the chatbot's answer, you can replace it by typing a !, followed by
-   the replacement answer. For example: `!This is the correct answer.`.
-4. You will be asked to upload the chat history to a Google Sheet after each question was answered correctly.
-   Type `j` to upload the chat history or `n` to skip this step. The chat history will be uploaded here:
+1. Die Demo führt dich durch den PHQ-9 Fragebogen. Weitere Fragebögen kommen in der Zukunft.
+2. Rechts sind zwei Textfelder. Im oberen kannst du mit dem Chatbot interagieren. Im unteren kannst du einen Kommentar
+   zu der jeweils letzten Antwort des Chatbots hinterlassen.
+3. Rechts unten gibt es einen Button um den Chatverlauf in Google Sheets hochzuladen.
+   Wenn du den klickst, können wir die Gesprächsdaten analysieren.
+   Wir speichern dabei den Benutzer-Input, den Bot-Output und die Kommentare.
+   Hier kannst du dir bisher gespeicherte Daten ansehen:
    https://docs.google.com/spreadsheets/d/1mx071HioSsIRDVRqv8CWm3VNxQS_cVKqZXSIxprourA/edit?gid=907089658#gid=907089658
 
-The system prompt will reset once a question was ansered correctly, i.e. context about the last question will be lost.
+Blaue Meldungen sind Info-Meldungen. Sie sind geskriptet, d.h. keine LLM-Ausgabe.
 
-Blue messages are info messages. They are scripted, i.e. no LLM output.
+Grüne Meldungen sind Benutzernachrichten.
 
-Grey messages are bot messages by the LLM.
+Graue Meldungen sind Bot-Meldungen des LLM.
 
-Green messages are user messages.
+Mögliche PHQ-9-Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.
 
-Possible PHQ9 answers: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.
+### Erläuterungen:
 
-### Limitations:
+- Momentan benutzt der ChatBot das Language Model Llama 3 70b, bereitgestellt von der Firma Groq.
+  Dabei wird Prompt Engineering eingesetzt, um die Qualität der Antworten zu verbessern.
+  Auf lange Sicht wird das Modell durch ein speziell für diesen Zweck trainiertes Modell ersetzt.
 
-- Training data is very limited as of now.
-- LLM will be bad for anything that's not represented in the training data yet.
-- The LLM is not able to detect out-of-scope questions.
-  (e.g. when asking "What is the capital of France?", it should do a fallback. To be implemented.).
-- Training data only has a history of length 1 and 2. LLM output quality will deteriorate after that.
+## TODOs:
 
-### TODO:
-- app should have out-of-scope detection.
-- app should allow user to replace bad LLM responses.
-- finalize Google Sheets upload function.
-- add "Tell me the answer options again" to training dataset.
+- GAD-7, Malmö-POTS Fragebögen hinzufügen
 """
 
 
 def main():
     st.set_page_config(
-        page_title="Chatbot Application",
-        page_icon=":robot_face:",
-        layout="wide"
+        page_title="Chatbot Application", page_icon=":robot_face:", layout="wide"
     )
     # endpoint_helper and sheet_helper have some costly initialization
     # steps that don't need to be repeated
-    if "endpoint_helper" not in st.session_state:
-        st.session_state.endpoint_helper = EH()
-    endpoint_helper = st.session_state.endpoint_helper
-    status = endpoint_helper.status()
-    if status in [IES.PAUSED, IES.SCALED_TO_ZERO, IES.INITIALIZING]:
-        st.write(("LLM endpoint is sleeping. Waking it up... This might take 1 - 2 minutes. "
-                  "Please refresh the browser every now and then."))
-        endpoint_helper.wakeup_endpoint()
-    else:
-        if "sheet_helper" not in st.session_state:
-            sheet_helper = SH()
-            sheet_helper.authorize()
-            sheet_helper.select_worksheet('streamlit-app')
-            st.session_state.sheet_helper = sheet_helper
-        sheet_helper = st.session_state.sheet_helper
-        chat(endpoint_helper, sheet_helper)
+    if "sheet_helper" not in st.session_state:
+        sheet_helper = SH()
+        sheet_helper.authorize()
+        sheet_helper.select_worksheet("streamlit-app")
+        st.session_state.sheet_helper = sheet_helper
+    sheet_helper = st.session_state.sheet_helper
+    chat(sheet_helper)
 
-def chat(endpoint_helper: EH, sheet_helper: SH):
+
+def chat(sheet_helper: SH):
     col1, col2 = st.columns(2)
 
     with col1:
@@ -86,100 +65,120 @@ def chat(endpoint_helper: EH, sheet_helper: SH):
 
     with col2:
         if "questionnaire" not in st.session_state:
-            st.session_state.questionnaire = load_questionnaire("PHQ9")
+            # TODO: rm hard-coded questionnaire name
+            st.session_state.questionnaire = Questionnaire.load_questionnaire("PHQ-9")
         questionnaire = st.session_state.questionnaire
 
         if "chatbox" not in st.session_state:
-            messages = get_prompt_and_question_message(questionnaire)
+            messages = questionnaire.get_prompt_and_question_message()
             st.session_state.chatbox = ChatBox(messages)
         chatbox = st.session_state.chatbox
 
         # Initialize counter for javascript injection
-        if 'counter' not in st.session_state:
+        if "counter" not in st.session_state:
             st.session_state.counter = 0
+
+        # Initialize the questionnaire finished flag if not already set
+        if "questionnaire_finished" not in st.session_state:
+            st.session_state.questionnaire_finished = False
 
         # Display the messages using the message_to_markdown function
         for message in chatbox.get_display_messages():
             message_to_markdown(message.role, message.content)
 
+        if "user_gave_remark" not in st.session_state:
+            st.session_state.user_gave_remark = False
+        if st.session_state.user_gave_remark:
+            st.toast("Your comment was received. Thanks!", icon="😍")
+            st.session_state.user_gave_remark = False
+
+        def set_session_state():
+            st.session_state.questionnaire = questionnaire
+            st.session_state.chatbox = chatbox
+
         # Create a form to handle input and button
-        with st.form(key="chat_form"):
-            chat_input = st.text_input("Enter your message:", key="chat_input")
+        if not st.session_state.questionnaire_finished:
+            with st.form(key="chat_form", clear_on_submit=True):
+                chat_input = st.text_input("Gib deine Nachricht ein:", key="chat_input")
 
-            # Inject JavaScript to autofocus the chat input field
-            components.html(
-                f"""
-                <div>some hidden container</div>
-                <p>{st.session_state.counter}</p>
-                <script>
-                    var input = window.parent.document.querySelectorAll("input[type=text]");
-                    for (var i = 0; i < input.length; ++i) {{
-                        input[i].focus();
-                    }}
-                </script>
-                """,
-                height=0,
-            )
+                # Send the message when the "Enter" key is pressed
+                if st.form_submit_button("Abschicken"):
+                    if chat_input:
+                        # Handle user wants to switch the questionnaire
+                        if chat_input in QUESTIONNAIRES:
+                            questionnaire = Questionnaire.load_questionnaire(chat_input)
+                            bot_uttr = "Questionnaire was set to: " + questionnaire.name
+                            info_message = ChatMessage(role="info", content=bot_uttr)
+                            messages = [
+                                info_message
+                            ] + questionnaire.get_prompt_and_question_message()
+                            chatbox = ChatBox(messages)
 
-            # Send the message when the "Enter" key is pressed
-            if st.form_submit_button("Send"):
-                if chat_input:
+                        # Handle LLM answer
+                        else:
+                            chatbox.add_messages(
+                                ChatMessage(role="user", content=chat_input)
+                            )
+                            bot_uttr = get_groq_answer(chatbox.messages)
+                            # bot_uttr = endpoint_helper.get_llm_answer(chatbox.messages)
+                            chatbox.add_messages(
+                                ChatMessage(role="assistant", content=bot_uttr)
+                            )
 
-                    # Handle user wants to upload the chatbox
-                    if chat_input in ["j", "n"]:
-                        if chat_input == "j":
-                            data_to_upload = chatbox.to_google_sheet_format()
-                            sheet_helper.upload_data(data_to_upload)
-                        # Load next question and update chatbox
-                        questionnaire.increment_question_idx()
-                        chatbox.remove_last_message("info")
-                        info_message_upload = ChatMessage(role="info", content="Sample uploaded.")
-                        first_messages = get_prompt_and_question_message(questionnaire)
-                        messages = [info_message_upload] + first_messages
-                        chatbox.add_messages(*messages)
+                            # Handle question was answered successfully
+                            matched_answer = questionnaire.extract_question_answer(
+                                bot_uttr
+                            )
+                            if matched_answer:
+                                # Load next question and update chatbox
+                                if questionnaire.is_finished():
+                                    st.session_state.questionnaire_finished = True
+                                else:
+                                    questionnaire.increment_question_idx()
+                                    messages = (
+                                        questionnaire.get_prompt_and_question_message()
+                                    )
+                                    chatbox.add_messages(*messages)
 
-                    # Handle user wants to replace last bot message
-                    elif chat_input.startswith("!"):
-                        new_bot_uttr = chat_input[1:].strip()
-                        chatbox.replace_last_bot_message(new_bot_uttr)
+                        # Update the session state
+                        set_session_state()
+                        st.rerun()
 
-                        # Handle question was answered successfully
-                        matched_answer = extract_question_answer(new_bot_uttr, questionnaire.allowed_answers)
-                        if matched_answer:
+            # A form to handle user comments about the last bot message
+            with st.form(key="comment_form", clear_on_submit=True):
+                comment_input = st.text_input(
+                    "Dein Kommentar über die lezte Bot-Ausgabe:", key="comment_input"
+                )
+                if st.form_submit_button("Abschicken"):
+                    if comment_input:
+                        chatbox.messages[-1].comment = comment_input
+                        st.session_state.user_gave_remark = True
+                        set_session_state()
+                        st.rerun()
 
-                            # Ask user if they want to upload the last chatbox sample
-                            chatbox.add_messages(ChatMessage(role="info", content="Upload sample? (j, n)"))
+        else:
+            st.write("The questionnaire is finished. Thank you for participating!")
 
-                    # Handle new questionnaire by user input
-                    elif chat_input in QUESTIONNAIRES:
-                        questionnaire = load_questionnaire(chat_input)
-                        bot_uttr = "Questionnaire was set to: " + questionnaire.name
-                        info_message = ChatMessage(role="info", content=bot_uttr)
-                        first_messages = [info_message] + get_prompt_and_question_message(
-                            questionnaire
-                        )
-                        chatbox = ChatBox(first_messages)
+        # Button to upload the chat history to Google Sheets
+        if st.button("Auf Google Sheets hochladen"):
+            data_to_upload = chatbox.to_google_sheet_format(questionnaire.name)
+            sheet_helper.upload_data(data_to_upload)
+            st.success("Data uploaded successfully!")
 
-                    # Handle LLM
-                    else:
-                        chatbox.add_messages(ChatMessage(role="user", content=chat_input))
-                        bot_uttr = endpoint_helper.get_llm_answer(chatbox.messages)
-                        chatbox.add_messages(ChatMessage(role="assistant", content=bot_uttr))
-
-                        # Handle question was answered successfully
-                        matched_answer = extract_question_answer(bot_uttr, questionnaire.allowed_answers)
-                        if matched_answer:
-
-                            # Ask user if they want to upload the last chatbox sample
-                            chatbox.add_messages(ChatMessage(role="info", content="Upload sample? (j, n)"))
-
-                    # Update the session state
-                    st.session_state.questionnaire = questionnaire
-                    st.session_state.chatbox = chatbox
-
-                    # Empty the input field
-                    st.session_state.enter_pressed = False
-                    st.rerun()
+        # Inject JavaScript to autofocus the chat input field
+        components.html(
+            f"""
+            <div>some hidden container</div>
+            <p>{st.session_state.counter}</p>
+            <script>
+                var input = window.parent.document.querySelectorAll("input[type=text]");
+                if (input.length >= 2) {{
+                    input[input.length - 2].focus();
+                }}
+            </script>
+            """,
+            height=0,
+        )
 
 
 if __name__ == "__main__":

@@ -2,10 +2,18 @@ from typing import List
 from datetime import datetime
 
 
+ROLES = ["user", "assistant", "info", "system"]
+
+
 class ChatMessage:
     def __init__(self, role, content):
+        if role not in ROLES:
+            raise ValueError(f"Role '{role}' not allowed. Choose from: {ROLES}")
         self.role = role
         self.content = content
+        self.comment = None
+        self.question_id = None
+
 
 class ChatBox:
     def __init__(self, messages: List[ChatMessage]):
@@ -34,21 +42,24 @@ class ChatBox:
         """Return messages that are supposed to be displayed in chat window."""
         return [message for message in self.messages if message.role != "system"]
 
-    def to_google_sheet_format(self):
+    def to_google_sheet_format(self, questionnaire_name):
         """Return the chat history in a format suitable for Google Sheets upload.
         Only upload one sample at a time, i.e. from the last system message to the end."""
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        messages = [message for message in self.messages if message.role != "info"]
-
-        # Find the index of the last system message
-        last_system_msg_index = None
-        for i, message in enumerate(messages):
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        question_id = 0
+        for message in self.messages:
             if message.role == "system":
-                last_system_msg_index = i
-
-        # If a system message was found, slice the messages list from its index
-        if last_system_msg_index is not None:
-            messages = messages[last_system_msg_index:]
-
-        data = [[timestamp, message.role, message.content] for message in messages]
+                question_id += 1
+            message.question_id = question_id
+        data = [
+            [
+                timestamp,
+                questionnaire_name,
+                message.question_id,
+                message.comment,
+                message.role,
+                message.content,
+            ]
+            for message in self.messages
+        ]
         return data
