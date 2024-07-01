@@ -1,17 +1,16 @@
-# run with: sudo sh rebuild-and-docker-run.sh
+#!/bin/bash
 
-docker build -t alpha-friends-llm-chatbot .
+# Stop and remove running containers with the name alpha-friends-llm-chatbot
+docker ps -a --filter ancestor=alpha-friends-llm-chatbot --format "{{.ID}}" | xargs -I {} sh -c 'sudo docker stop {}; sudo docker rm {}'
 
-# non-detached mode, app closes when logging out
-docker run -p 8501:8501 alpha-friends-llm-chatbot
+# Remove all images with the tag alpha-friends-llm-chatbot
+docker images alpha-friends-llm-chatbot --format "{{.ID}}" | xargs -I {} sudo docker rmi {}
 
-# detached mode, app keeps running when logging out
-# docker run -d -p 8501:8501 alpha-friends-llm-chatbot
+# Build the image
+sudo docker build -t alpha-friends-llm-chatbot .
 
-# NOTES:
+# Run the container in non-detached mode
+sudo docker run -p 8501:8501 alpha-friends-llm-chatbot
 
-# remove (all) images:
-# sudo docker rm $(sudo docker ps -a -q)
-
-# remove (all) containers:
-# sudo docker rmi $(sudo docker images -q)
+# To run in detached mode, uncomment the following line and comment out the above run command
+# sudo docker run -d -p 8501:8501 alpha-friends-llm-chatbot
