@@ -11,7 +11,7 @@ data_dir = current_file.parent / "phq9"
 print("data dir is: ", data_dir)
 
 # Get all JSON files in the parent directory
-json_files = sorted(list(data_dir.glob("q*.json")))
+json_files = sorted(list(data_dir.glob("*.json")))
 print(json_files)
 
 # Initialize an empty list to store all dictionaries
@@ -28,5 +28,3 @@ for json_file in json_files:
 # Write the combined data to a new JSON file
 with open(data_dir / "phq9_data_full.json", "w", encoding="utf-8") as f:
     json.dump(combined_data, f, ensure_ascii=False)
-
-

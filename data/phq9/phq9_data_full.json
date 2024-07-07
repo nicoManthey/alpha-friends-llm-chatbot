@@ -1,0 +1,1330 @@
+[
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten?",
+        "instruction": "selten",
+        "output": "Verstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "oft",
+        "output": "Das verstehe ich. Ich notiere 'An mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten?",
+        "instruction": "immer",
+        "output": "Das bedeutet, dass du fast immer kein Interesse oder keine Freude an deinen Tätigkeiten hattest. Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "nie",
+        "output": "Das schreibe ich als 'Überhaupt nicht' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten?",
+        "instruction": "selten",
+        "output": "Verstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "immer",
+        "output": "Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten?",
+        "instruction": "selten",
+        "output": "Das verstehe ich als \"An einzelnen Tagen\". Verstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "immer",
+        "output": "Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten?",
+        "instruction": "selten",
+        "output": "Ich verstehe. Das bedeutet für mich, dass du an einzelnen Tagen das Interesse oder die Freude an deinen Tätigkeiten gefehlt hast.\n\nVerstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "immer",
+        "output": "Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das passiert von Montag bis Freitag, also meistens.",
+        "output": "Okay, meistens. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Gar nicht, ich habe eigentlich immer Spaß an meinen Tätigkeiten.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das kommt ganz darauf an, was los ist.",
+        "output": "Es geht konkret um letzte Woche. Wie oft war es da der Fall?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche. Naja, von Montag bis Donnerstag. Am Wochenende war es besser.",
+        "output": "Okay, von Montag bis Donnerstag. Ich schreibe auf 'an mehr als der Hälfte der Tage'.",
+        "history": [
+            [
+                "Das kommt ganz darauf an, was los ist.",
+                "Es geht konkret um letzte Woche. Wie oft war es da der Fall?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nein, das habe ich nicht erlebt.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal, aber nicht ständig.",
+        "output": "Alles klar, ein paar Mal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast täglich, das war ziemlich schwer.",
+        "output": "Verstanden, fast täglich. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Immer wieder, es hört nie auf.",
+        "output": "Okay, immer wieder. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal pro Woche, aber nicht jeden Tag.",
+        "output": "Alles klar, ein paar Mal pro Woche. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nein, gar nicht.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast immer, es war eine harte Woche.",
+        "output": "Verstanden, fast immer. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur ab und zu, nicht oft.",
+        "output": "Alles klar, nur ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jeden Tag so.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal, aber nicht oft.",
+        "output": "Okay, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es passiert ab und an, nicht regelmäßig.",
+        "output": "Alles klar, ab und an. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nicht ein einziges Mal.",
+        "output": "Okay, kein einziges Mal. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders wenn viel los ist.",
+        "output": "Okay, häufig. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt drauf an, an manchen Tagen mehr, an anderen weniger.",
+        "output": "Kannst du mir sagen, wie oft es letzte Woche vorkam?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es nur an zwei Tagen so.",
+        "output": "Alles klar, an zwei Tagen. Ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Es kommt drauf an, an manchen Tagen mehr, an anderen weniger.",
+                "Alles klar, an zwei Tagen. Ich notiere 'an einzelnen Tagen'."
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich meistens, aber manchmal geht es auch.",
+        "output": "Geht es um die letzte Woche? Wie oft war es da?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es fast jeden Tag so, außer am Samstag.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Eigentlich meistens, aber manchmal geht es auch.",
+                "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'."
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich weiß nicht genau, vielleicht so zweimal?",
+        "output": "Also an zwei Tagen?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, letzte Woche waren es zwei Tage.",
+        "output": "Verstanden, zwei Tage. Ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Ich weiß nicht genau, vielleicht so zweimal?",
+                "Verstanden, zwei Tage. Ich notiere 'an einzelnen Tagen'."
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es schwankt, manchmal oft, manchmal weniger.",
+        "output": "Kannst du konkret sagen, wie oft letzte Woche?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es meistens so, außer am Sonntag.",
+        "output": "Okay, meistens außer am Sonntag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Es schwankt, manchmal oft, manchmal weniger.",
+                "Kannst du konkret sagen, wie oft letzte Woche?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das ist unterschiedlich.",
+        "output": "Versuch, dir die letzte Woche noch mal in den Kopf zu rufen.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche nur an einem Tag.",
+        "output": "Okay, nur an einem Tag. Ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Das ist unterschiedlich.",
+                "Versuch, dir die letzte Woche noch mal in den Kopf zu rufen. Wie oft war es da?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Hm, ich würde sagen, fast jeden Tag.",
+        "output": "Alles klar, fast jeden Tag. Ich schreibe auf 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal, aber nicht so oft.",
+        "output": "Alles klar, manchmal. Ich schreibe auf 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das ist schwer zu sagen, manchmal mehr, manchmal weniger.",
+        "output": "Geh im Kopf noch mal die letzte Woche durch. Wie oft warst Du da niedergeschlagen oder hoffnungslos?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das ist fast mein Normalzustand, also eigentlich beinahe jeden Tag.",
+        "output": "Ich habe notiert: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Das ist schwer zu sagen, manchmal mehr, manchmal weniger.",
+                "Geh im Kopf noch mal die letzte Woche durch. Wie oft warst Du da niedergeschlagen oder hoffnungslos?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast jeden Tag, besonders abends.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich nie, ich fühle mich ziemlich gut.",
+        "output": "Okay, gar nicht. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ab und zu, wenn ich alleine bin.",
+        "output": "Okay, ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast nie, nur ganz selten.",
+        "output": "Alles klar, fast nie. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche an drei Tagen.",
+        "output": "Okay, drei Tage. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich fast immer, besonders wenn es stressig wird.",
+        "output": "Verstanden, fast immer. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal, aber es geht meistens schnell vorbei.",
+        "output": "Alles klar, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "An mehr als der Hälfte der Tage, besonders nach der Arbeit.",
+        "output": "Okay, an mehr als der Hälfte der Tage. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt selten vor, vielleicht ein oder zwei Mal letzte Woche.",
+        "output": "Alles klar, ein oder zwei Mal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Immer wieder, es scheint nie aufzuhören.",
+        "output": "Okay, immer wieder. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es meistens okay, außer an zwei Tagen.",
+        "output": "Verstanden, an zwei Tagen. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jeden Tag, besonders wenn es regnete.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, vielleicht einmal die Woche.",
+        "output": "Alles klar, selten. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "An mehr als der Hälfte der Tage, meistens abends.",
+        "output": "Verstanden, an mehr als der Hälfte der Tage. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich weiß nicht, es schwankt sehr.",
+        "output": "Versuche dich an letzte Woche zu erinnern. Wie oft war es da?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Vielleicht so drei oder vier Mal.",
+        "output": "Okay, drei oder vier Mal. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": [
+            [
+                "Ich weiß nicht, es schwankt sehr.",
+                "Versuche dich an letzte Woche zu erinnern. Wie oft war es da?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast immer, es war eine schwere Woche.",
+        "output": "Okay, fast immer. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war ich nur einmal wirklich niedergeschlagen.",
+        "output": "Alles klar, nur einmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal fühle ich mich so, aber nicht oft.",
+        "output": "Okay, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders wenn ich alleine bin.",
+        "output": "Okay, häufig. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich glaube, das trifft ebenfalls fast jeden Tag zu.",
+        "output": "Verstanden, ebenfalls fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Sporadisch, hin und wieder mal.",
+        "output": "Verstanden, sporadisch. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe meistens schlecht, aber manchmal geht es auch.",
+        "output": "Ich bin mir nicht ganz sicher, wie ich das bewerten soll. In Bezug auf letzte Woche, heißt das an mehr als der Hälfte der Tage oder beinahe jeden Tag?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In Bezug auf letzte Woche eher an mehr als der Hälfte der Tage.",
+        "output": "Alles klar. Ich habe 'an mehr als der Hälfte der Tage' notiert.",
+        "history": [
+            [
+                "Ich schlafe meistens schlecht, aber manchmal geht es auch.",
+                "Ich bin mir nicht ganz sicher, wie ich das bewerten soll. In Bezug auf letzte Woche, heißt das an mehr als der Hälfte der Tage oder beinahe jeden Tag?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich habe fast jede Nacht Probleme einzuschlafen.",
+        "output": "Alles klar, fast jede Nacht. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur manchmal, wenn ich Stress habe.",
+        "output": "Verstanden, manchmal bei Stress. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es wechselt, manchmal schlafe ich zu viel, manchmal gar nicht.",
+        "output": "Versuche dich an die letzte Woche zu erinnern. Wie oft hattest du Schlafprobleme oder hast zu viel geschlafen?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich jeden Tag, mein Schlafrhythmus ist völlig durcheinander.",
+        "output": "Verstanden, jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Es wechselt, manchmal schlafe ich zu viel, manchmal gar nicht.",
+                "Versuche dich an die letzte Woche zu erinnern. Wie oft hattest du Schlafprobleme oder hast zu viel geschlafen?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich kann meistens gut schlafen, nur ab und zu nicht.",
+        "output": "Okay, meistens gut schlafen. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe fast jede Nacht durch, keine Probleme.",
+        "output": "Verstanden, keine Probleme. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal letzte Woche, vielleicht drei Nächte.",
+        "output": "Okay, drei Nächte. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Sehr selten, ich schlafe fast immer gut.",
+        "output": "Alles klar, du schläfst fast immer gut. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Mehr als die Hälfte der Woche hatte ich Schwierigkeiten, einzuschlafen.",
+        "output": "Okay, mehr als die Hälfte der Woche. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jede Nacht schwer, besonders wenn ich spät ins Bett ging.",
+        "output": "Okay, fast jede Nacht. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war gut, nur eine Nacht war schwierig.",
+        "output": "Verstanden, eine schwierige Nacht. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders wenn ich zu viel nachdenke.",
+        "output": "Okay, häufig bei zu viel Nachdenken. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, eigentlich schlafe ich ganz gut.",
+        "output": "Alles klar, selten, eigentlich schläfst du gut. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt immer wieder vor, dass ich nicht einschlafen kann.",
+        "output": "Okay, es kommt immer wieder vor. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe oft zu viel, besonders am Wochenende.",
+        "output": "Verstanden, oft zu viel schlafen. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich schlafe oft zu viel, das passiert andauernd.",
+        "output": "Gut, andauernd. Ich halte fest 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Kein einziges Mal, ich fühle mich immer energiegeladen.",
+        "output": "Gut, kein einziges Mal. Ich halte fest 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das kommt oft vor, besonders wenn ich viel zu tun habe.",
+        "output": "Wir fokussieren uns auf die letzte Woche. Wie oft warst Du da müde oder energielos?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Oh, in der letzten Woche? Fast jeden Tag.",
+        "output": "Ich habe notiert: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Das kommt oft vor, besonders wenn ich viel zu tun habe.",
+                "Wir fokussieren uns auf die letzte Woche. Wie oft warst Du da müde oder energielos?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich fühle mich fast jeden Tag erschöpft.",
+        "output": "Verstanden, fast jeden Tag erschöpft. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur manchmal, wenn ich viel gearbeitet habe.",
+        "output": "Verstanden, manchmal bei viel Arbeit. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich habe die meiste Zeit Energie, aber manchmal bin ich doch müde.",
+        "output": "Könntest du das genauer beschreiben? Heißt das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In Bezug auf letzte Woche, eher an mehr als der Hälfte der Tage.",
+        "output": "Alles klar. Ich habe 'an mehr als der Hälfte der Tage' notiert.",
+        "history": [
+            [
+                "Ich habe die meiste Zeit Energie, aber manchmal bin ich doch müde.",
+                "Könntest du das genauer beschreiben? Heißt das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich fühle mich fast die ganze Zeit schlapp.",
+        "output": "Verstanden, fast die ganze Zeit. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur ab und zu, wenn ich schlecht geschlafen habe.",
+        "output": "Verstanden, ab und zu bei schlechtem Schlaf. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es wechselt, manchmal habe ich viel Energie, manchmal gar keine.",
+        "output": "Versuche dich an die letzte Woche zu erinnern. Wie oft warst du müde oder energielos?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Eigentlich jeden Tag, ich bin ständig müde.",
+        "output": "Verstanden, jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Es wechselt, manchmal habe ich viel Energie, manchmal gar keine.",
+                "Versuche dich an die letzte Woche zu erinnern. Wie oft warst du müde oder energielos?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich habe meistens genug Energie, nur selten fühle ich mich müde.",
+        "output": "Okay, meistens genug Energie, nur selten müde. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin fast nie müde, nur gelegentlich.",
+        "output": "Verstanden, fast nie müde, nur gelegentlich energielos. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ein paar Mal letzte Woche, vielleicht zwei oder drei Tage.",
+        "output": "Okay, zwei oder drei Tage. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Sehr selten, ich fühle mich fast immer fit.",
+        "output": "Alles klar, fast immer fit. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Mehr als die Hälfte der Woche war ich ziemlich erschöpft.",
+        "output": "Okay, mehr als die Hälfte der Woche. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es war fast jeden Tag schwierig, besonders nachmittags.",
+        "output": "Okay, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war ich nur einmal müde.",
+        "output": "Verstanden, nur einmal müde. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Häufig, besonders nach einem anstrengenden Tag.",
+        "output": "Okay, häufig nach anstrengenden Tagen. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, ich habe meistens genug Energie.",
+        "output": "Alles klar, selten müde, meist genug Energie. Soll ich 'an einzelnen Tagen' aufschreiben oder 'überhaupt nicht'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "An einzelnen Tagen.",
+        "output": "Okay, ich schreibe 'an einzelnen Tagen' auf.",
+        "history": [
+            [
+                "Nur selten, ich habe meistens genug Energie.",
+                "Alles klar, selten müde, meist genug Energie. Soll ich 'an einzelnen Tagen' aufschreiben oder 'überhaupt nicht'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt immer wieder vor, dass ich mich müde fühle.",
+        "output": "Okay, es kommt immer wieder vor. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du müde oder energielos? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin oft müde, besonders wenn ich wenig Schlaf bekomme.",
+        "output": "Verstanden, oft müde bei wenig Schlaf. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Oh, das ist definitiv die ganze Zeit.",
+        "output": "Verstanden, die ganze Zeit. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ab und zu, aber nicht oft.",
+        "output": "Verstanden, ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Mein Appetit schwankt immer.",
+        "output": "In Bezug auf die letzte Woche, wie oft hattest Du da weniger oder zu viel Appetit?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In der letzten Woche war es an ein paar Tagen so.",
+        "output": "Ich notiere: 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Mein Appetit schwankt immer.",
+                "In Bezug auf die letzte Woche, wie oft hattest Du da weniger oder zu viel Appetit?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe ständig Heißhunger und esse viel mehr als normalerweise.",
+        "output": "Gut, ständig Heißhunger. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe kaum Appetit und esse fast gar nichts.",
+        "output": "Verstanden, fast gar nichts. Ich halte fest 'gar nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In stressigen Phasen esse ich viel mehr als normalerweise.",
+        "output": "Wir betrachten hier die letzte Woche. Wie häufig hattest du da weniger oder zu viel Appetit?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Oh, in der letzten Woche? Fast jeden Tag.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'fast jeden Tag'.",
+        "history": [
+            [
+                "In stressigen Phasen esse ich viel mehr als normalerweise.",
+                "Wir betrachten hier die letzte Woche. Wie häufig hattest du da weniger oder zu viel Appetit?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse nur, wenn ich wirklich hungrig bin, also eher selten.",
+        "output": "Verstanden, eher selten. Ich halte fest 'gar nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Normalerweise habe ich einen regelmäßigen Appetit, außer wenn ich gestresst bin.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In der letzten Woche war es eher an den meisten Tagen.",
+        "output": "Alles klar. Ich notiere 'an den meisten Tagen'.",
+        "history": [
+            [
+                "Normalerweise habe ich einen regelmäßigen Appetit, außer wenn ich gestresst bin.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe in letzter Zeit ständig Lust auf Süßigkeiten und nasche oft.",
+        "output": "Gut, ständig Lust auf Süßigkeiten. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse immer dann, wenn ich gestresst bin, also ziemlich oft.",
+        "output": "Verstanden, ziemlich oft. Ich halte fest 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In der Regel esse ich nur, wenn ich hungrig bin, also eher selten.",
+        "output": "Wir betrachten die letzten sieben Tage. Wie häufig hattest du da weniger oder zu viel Appetit?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Fast jeden Tag verspüre ich einen starken Appetit, vor allem auf herzhafte Speisen.",
+        "output": "Verstanden, fast jeden Tag starken Appetit auf herzhafte Speisen. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich habe oft das Bedürfnis, meine Emotionen durch Essen zu kontrollieren.",
+        "output": "Verstanden, oft das Bedürfnis, Emotionen durch Essen zu kontrollieren. Ich notiere 'an den meisten Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Normalerweise esse ich regelmäßig, aber in letzter Zeit habe ich oft keinen Appetit.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'gar nicht'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Meistens esse ich nur zu den Hauptmahlzeiten, aber manchmal snacke ich zwischendurch.",
+        "output": "Alles klar. Ich notiere 'an einigen Tagen'.",
+        "history": [
+            [
+                "Normalerweise esse ich regelmäßig, aber in letzter Zeit habe ich oft keinen Appetit.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'an einigen Tagen' oder 'gar nicht'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse oft aus Langeweile, nicht weil ich hungrig bin.",
+        "output": "Verstanden, oft aus Langeweile. Ich notiere 'an den meisten Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich fühle mich oft traurig und esse dann sehr wenig.",
+        "output": "Okay, sehr wenig. Ich halte fest 'an den meisten Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Normalerweise habe ich einen guten Appetit, aber wenn ich gestresst bin, verliere ich ihn völlig.",
+        "output": "Verstanden. Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "In der letzten Woche war es meistens so, dass ich kaum Appetit hatte.",
+        "output": "Alles klar. Ich notiere 'an den meisten Tagen'.",
+        "history": [
+            [
+                "Normalerweise habe ich einen guten Appetit, aber wenn ich gestresst bin, verliere ich ihn völlig.",
+                "Verstanden. Bedeutet das 'an einigen Tagen' oder 'an den meisten Tagen'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du weniger oder zu viel Appetit? Erlaubte Antworten: Gar nicht, An einigen Tagen, An den meisten Tagen, Fast jeden Tag.",
+        "instruction": "Ich esse oft, wenn ich gelangweilt oder gestresst bin, also ziemlich häufig.",
+        "output": "Verstanden, ziemlich häufig. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich esse eigentlich viel weniger als sonst, aber nicht jeden Tag. Oft trifft es eher.",
+        "output": "Okay, oft. Ich schreibe 'an mehr als der Hälfte der Tage' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Gar nicht, ich habe immer eine positive Meinung von mir.",
+        "output": "Okay, gar nicht. Ich schreibe 'überhaupt nicht' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal denke ich, ich bin nicht gut genug.",
+        "output": "Wenn Du an die letzte Woche denkst, wie oft hattest Du diese Gedanken?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche war es besonders schlimm, fast jeden Tag.",
+        "output": "Okay, ich notiere: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Manchmal denke ich, ich bin nicht gut genug.",
+                "Wenn Du an die letzte Woche denkst, wie oft hattest Du diese Gedanken?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Immer, ich zweifle oft an mir.",
+        "output": "Verstanden, oft. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ab und zu, aber meistens denke ich positiv.",
+        "output": "Verstanden, ab und zu. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich denke selten negativ über mich selbst nach.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'überhaupt nicht' oder 'an einzelnen Tagen'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Überhaupt nicht.",
+        "output": "Okay, überhaupt nicht. Ich notiere 'überhaupt nicht'.",
+        "history": [
+            [
+                "Ich denke selten negativ über mich selbst nach.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'überhaupt nicht' oder 'an einzelnen Tagen'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In letzter Zeit habe ich oft negative Gedanken über mich.",
+        "output": "Gut, oft negative Gedanken. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich zweifle manchmal an mir, aber ich arbeite daran, positiver zu denken.",
+        "output": "Verstanden, manchmal. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Normalerweise denke ich positiv, aber in letzter Zeit häufiger negativ.",
+        "output": "Versuch, speziell an letzte Woche zu denken. Wie oft war es da der Fall?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Schon oft.",
+        "output": "Gut, schon oft. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": [
+            [
+                "Normalerweise denke ich positiv, aber in letzter Zeit häufiger negativ.",
+                "Versuch, speziell an letzte Woche zu denken. Wie oft war es da der Fall?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast jeden Tag denke ich schlecht über mich.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin normalerweise recht selbstbewusst, aber letzte Woche war ich oft unsicher.",
+        "output": "Gut, letzte Woche oft unsicher. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich zweifle oft an mir, fast jeden Tag.",
+        "output": "Verstanden, zweifle oft, fast jeden Tag. Ich notiere 'fast jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Normalerweise denke ich positiv, aber letzte Woche war hart.",
+        "output": "Könntest du das genauer beschreiben? Bedeutet das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hattest Du eine schlechte Meinung von Dir selbst? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche hatte ich die ganze Zeit eine schlechte Meinung von mir.",
+        "output": "Okay, die ganze Zeit. Ich notiere 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Normalerweise denke ich positiv, aber letzte Woche war hart.",
+                "Könntest du das genauer beschreiben? Bedeutet das 'an einzelnen Tagen' oder 'an mehr als der Hälfte der Tage'?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das Gefühl habe ich auch ziemlich oft, ich würde sagen fast jeden Tag.",
+        "output": "Verstanden, fast jeden Tag. Ich vermerke 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Vereinzelt, aber das ist selten.",
+        "output": "Verstanden, vereinzelt. Ich vermerke 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin oft abgelenkt, aber nicht immer.",
+        "output": "War das auch in der letzten Woche so? Wie oft hattest Du da Schwierigkeiten Dich zu konzentrieren?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Naja, letzte Woche war es eher selten der Fall.",
+        "output": "Verstanden, ich notiere 'an einzelnen Tagen'.",
+        "history": [
+            [
+                "Ich bin oft abgelenkt, aber nicht immer.",
+                "War das auch in der letzten Woche so? Wie oft hattest Du da Schwierigkeiten Dich zu konzentrieren?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich kann mich fast nie konzentrieren, besonders wenn ich gestresst bin.",
+        "output": "Verstanden, du kannst dich fast nie konzentrieren. Also hast du beinahe jeden Tag Schwierigkeiten. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Manchmal verliere ich den Faden, aber meistens geht es.",
+        "output": "Okay, manchmal. Soll ich 'an einzelnen Tagen' aufschreiben?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, an einzelnen Tagen trifft zu.",
+        "output": "Okay, ich schreibe 'an einzelnen Tagen' auf.?",
+        "history": [
+            [
+                "Manchmal verliere ich den Faden, aber meistens geht es.",
+                "Okay, manchmal. Soll ich 'an einzelnen Tagen' aufschreiben?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In letzter Zeit hatte ich oft Schwierigkeiten, mich zu konzentrieren.",
+        "output": "Verstanden, oft Konzentrationsschwierigkeiten. Ich notiere 'an mehr als der Hälfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin fast jeden Tag zerstreut.",
+        "output": "Alles klar, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nur selten, ich bin normalerweise ziemlich fokussiert.",
+        "output": "Verstanden, nur selten. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Es kommt vor, besonders wenn ich gestresst bin.",
+        "output": "Okay, es kommt vor. Soll ich 'an einzelnen Tagen' notieren?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, schreib 'an einzelnen Tagen' auf.",
+        "output": "Okay, ich hab 'an einzelnen Tagen' aufgeschrieben.",
+        "history": [
+            [
+                "Es kommt vor, besonders wenn ich gestresst bin.",
+                "Okay, es kommt vor. Soll ich 'an einzelnen Tagen' notieren?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Fast jeden Tag, besonders morgens.",
+        "output": "Verstanden, fast jeden Tag. Ich notiere 'beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In letzter Zeit hatte ich keine Probleme, mich zu konzentrieren.",
+        "output": "Gut, keine Probleme. Ich notiere 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich bin normalerweise ziemlich fokussiert.",
+        "output": "Verstanden, normalerweise fokussiert. Soll ich 'überhaupt nicht' notieren?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja.",
+        "output": "Verstanden, ich notiere 'überhaupt nicht'.?",
+        "history": [
+            [
+                "Ich bin normalerweise ziemlich fokussiert.",
+                "Verstanden, normalerweise fokussiert. Soll ich 'überhaupt nicht' notieren?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Einige Male, besonders wenn ich gestresst bin.",
+        "output": "Alles klar, einige Male. Ich notiere 'an einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ja, das passiert auch fast jeden Tag.",
+        "output": "Alles klar, fast jeden Tag. Ich halte fest 'beinahe jden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Kein einziges Mal, ich bin immer fokussiert.",
+        "output": "Alles klar, kein einziges Mal. Ich halte fest 'überhaupt nicht'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das wechselt ständig.",
+        "output": "Denk an die letzte Woche. Wie oft war es da der Fall?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Letzte Woche? Andauernd.",
+        "output": "Okay, ich notiere: 'beinahe jeden Tag'.",
+        "history": [
+            [
+                "Das wechselt ständig.",
+                "Denk an die letzte Woche. Wie oft war es da der Fall?"
+            ]
+        ]
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Ich glaube, das passiert meistens.",
+        "output": "Verstanden, meistens. Ich schreibe 'an mehr als der Hälfte der Tage' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Nie, das ist mir noch nie passiert.",
+        "output": "Verstanden, nie. Ich schreibe 'überhaupt nicht' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "Das möchte ich eigentlich nicht sagen.",
+        "output": "Es hilft bei der psychologischen Behandlung. Wie oft hattest Du in der letzten Woche solche Gedanken?",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie häufig hattest Du lebensmüde Gedanken? Erlaubte Antworten: Überhaupt nicht, An einzelnen Tagen, An mehr als der Hälfte der Tage, Beinahe jeden Tag.",
+        "instruction": "In der letzten Woche war es einmal so.",
+        "output": "Ich habe 'an einzelnen Tagen' notiert.",
+        "history": [
+            [
+                "Das möchte ich eigentlich nicht sagen.",
+                "Es hilft bei der psychologischen Behandlung. Wie oft hattest Du in der letzten Woche solche Gedanken?"
+            ]
+        ]
+    }
+]

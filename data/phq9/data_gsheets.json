@@ -1,0 +1,72 @@
+[
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen T\u00e4tigkeiten?",
+        "instruction": "selten",
+        "output": "Verstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "oft",
+        "output": "Das verstehe ich. Ich notiere 'An mehr als der H\u00e4lfte der Tage'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen T\u00e4tigkeiten?",
+        "instruction": "immer",
+        "output": "Das bedeutet, dass du fast immer kein Interesse oder keine Freude an deinen T\u00e4tigkeiten hattest. Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "nie",
+        "output": "Das schreibe ich als '\u00dcberhaupt nicht' auf.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen T\u00e4tigkeiten?",
+        "instruction": "selten",
+        "output": "Verstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "immer",
+        "output": "Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen T\u00e4tigkeiten?",
+        "instruction": "selten",
+        "output": "Das verstehe ich als \"An einzelnen Tagen\". Verstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "immer",
+        "output": "Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft fehlte Dir das Interesse oder Freude an Deinen T\u00e4tigkeiten?",
+        "instruction": "selten",
+        "output": "Ich verstehe. Das bedeutet f\u00fcr mich, dass du an einzelnen Tagen das Interesse oder die Freude an deinen T\u00e4tigkeiten gefehlt hast.\n\nVerstanden, ich notiere 'An einzelnen Tagen'.",
+        "history": []
+    },
+    {
+        "input": "",
+        "system": "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+        "instruction": "immer",
+        "output": "Okay, ich nehme auf 'Beinahe jeden Tag'.",
+        "history": []
+    }
+]
