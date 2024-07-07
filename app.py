@@ -90,7 +90,7 @@ def chat(sheet_helper: SH):
         if "user_gave_remark" not in st.session_state:
             st.session_state.user_gave_remark = False
         if st.session_state.user_gave_remark:
-            st.toast("Your comment was received. Thanks!", icon="😍")
+            st.toast("Dein Kommentar wurde aufgenommen. Danke!", icon="😍")
             st.session_state.user_gave_remark = False
 
         def set_session_state():
@@ -108,7 +108,9 @@ def chat(sheet_helper: SH):
                         # Handle user wants to switch the questionnaire
                         if chat_input in QUESTIONNAIRES:
                             questionnaire = Questionnaire.load_questionnaire(chat_input)
-                            bot_uttr = "Questionnaire was set to: " + questionnaire.name
+                            bot_uttr = (
+                                "Fragebogen wurde umgestellt auf: " + questionnaire.name
+                            )
                             info_message = ChatMessage(role=Role.INFO, content=bot_uttr)
                             messages = [
                                 info_message
@@ -158,13 +160,13 @@ def chat(sheet_helper: SH):
                         st.rerun()
 
         else:
-            st.write("The questionnaire is finished. Thank you for participating!")
+            st.write("Du hast den Fragebogen abgeschlossen. Danke fürs Mitmachen!")
 
             # Button to upload the chat history to Google Sheets
             if st.button("Auf Google Sheets hochladen"):
                 data_to_upload = chatbox.to_google_sheet_format(questionnaire.name)
                 sheet_helper.upload_data(data_to_upload)
-                st.success("Data uploaded successfully!")
+                st.success("Fragebogen erfolgreich hochgeladen!")
 
         # Inject JavaScript to autofocus the chat input field
         components.html(
