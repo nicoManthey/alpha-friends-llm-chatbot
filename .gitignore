@@ -10,6 +10,9 @@ google_sheets_credentials.json
 # python virtual environment
 .venv
 
+# .vscode folder
+.vscode
+
 # exclude local scripts
 run_vllm_openai.py
 transformers_hf_test.py
