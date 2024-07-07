@@ -19,8 +19,8 @@ instructions = f"""
 3. Rechts unten gibt es einen Button um den Chatverlauf in Google Sheets hochzuladen.
    Wenn du den klickst, können wir die Gesprächsdaten analysieren.
    Wir speichern dabei den Benutzer-Input, den Bot-Output und die Kommentare.
-   Hier kannst du dir bisher gespeicherte Daten ansehen:
-   https://docs.google.com/spreadsheets/d/1mx071HioSsIRDVRqv8CWm3VNxQS_cVKqZXSIxprourA/edit?gid=907089658#gid=907089658
+   [Hier kannst du dir bisher gespeicherte Daten ansehen](https://docs.google.com/spreadsheets/d/1mx071HioSsIRDVRqv8CWm3VNxQS_cVKqZXSIxprourA/edit?gid=907089658#gid=907089658).
+
 
 Blaue Meldungen sind Info-Meldungen. Sie sind geskriptet, d.h. keine LLM-Ausgabe.
 
