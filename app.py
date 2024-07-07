@@ -16,7 +16,8 @@ instructions = f"""
 1. Die Demo führt dich durch den PHQ-9 Fragebogen. Weitere Fragebögen kommen in der Zukunft.
 2. Rechts sind zwei Textfelder. Im oberen kannst du mit dem Chatbot interagieren. Im unteren kannst du einen Kommentar
    zu der jeweils letzten Antwort des Chatbots hinterlassen.
-3. Rechts unten gibt es einen Button um den Chatverlauf in Google Sheets hochzuladen.
+3. Nachdem du einen Fragebogen abgeschlossen hast, erscheint rechts unten ein Button mit dem du den Chatverlauf
+   auf Google Sheets hochladen kannst.
    Wenn du den klickst, können wir die Gesprächsdaten analysieren.
    Wir speichern dabei den Benutzer-Input, den Bot-Output und die Kommentare.
    [Hier kannst du dir bisher gespeicherte Daten ansehen](https://docs.google.com/spreadsheets/d/1mx071HioSsIRDVRqv8CWm3VNxQS_cVKqZXSIxprourA/edit?gid=907089658#gid=907089658).
@@ -159,11 +160,11 @@ def chat(sheet_helper: SH):
         else:
             st.write("The questionnaire is finished. Thank you for participating!")
 
-        # Button to upload the chat history to Google Sheets
-        if st.button("Auf Google Sheets hochladen"):
-            data_to_upload = chatbox.to_google_sheet_format(questionnaire.name)
-            sheet_helper.upload_data(data_to_upload)
-            st.success("Data uploaded successfully!")
+            # Button to upload the chat history to Google Sheets
+            if st.button("Auf Google Sheets hochladen"):
+                data_to_upload = chatbox.to_google_sheet_format(questionnaire.name)
+                sheet_helper.upload_data(data_to_upload)
+                st.success("Data uploaded successfully!")
 
         # Inject JavaScript to autofocus the chat input field
         components.html(
