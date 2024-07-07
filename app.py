@@ -65,6 +65,14 @@ def chat(sheet_helper: SH):
         st.write(instructions)
 
     with col2:
+        num_completed_questionnaires = (
+            sheet_helper.get_number_of_completed_questionnaires()
+        )
+        st.write(
+            "#### Auf google Sheets gespeicherte Fragebögen: "
+            + str(num_completed_questionnaires)
+        )
+
         if "questionnaire" not in st.session_state:
             # TODO: rm hard-coded questionnaire name
             st.session_state.questionnaire = Questionnaire.load_questionnaire("PHQ-9")
