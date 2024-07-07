@@ -53,14 +53,25 @@ class GSheetHelper:
         start_cell = f"A{self._get_first_empty_row_in_column_a()}"
         self.sheet.update(data, start_cell)
 
-    def get_number_of_completed_questionnaires(self):
+    def get_number_of_completed_questionnaires(self, questionnaire_name):
         """Return the number of completed questionnaires from G sheets."""
         if not self.sheet:
             raise Exception("Sheet not selected. Call select_worksheet() first.")
         # Get all values from column A, starting from the second row
         column_a_values = self.sheet.col_values(1)[1:]  # Start in cell A2
-        unique_dates = set(column_a_values)
-        return len(unique_dates)
+        column_b_values = self.sheet.col_values(2)[1:]  # Start in cell B2
+        # Create a DataFrame from the two columns
+        df = pd.DataFrame(
+            {"runID": column_a_values, "questionnaire_name": column_b_values}
+        )
+        # Filter the DataFrame by questionnaire name
+        df = df[df["questionnaire_name"] == questionnaire_name]
+
+        # Remove duplicate rows based on both columns
+        unique_df = df.drop_duplicates()
+
+        # Return the number of unique combinations
+        return len(unique_df)
 
     def get_data(self):
         """Return all data from the selected worksheet."""

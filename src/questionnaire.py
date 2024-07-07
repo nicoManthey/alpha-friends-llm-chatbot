@@ -5,7 +5,12 @@ import json
 
 from src.chat_utils import Role, ChatMessage
 
-QUESTIONNAIRES = ["PHQ-9"]
+
+def _load_questionnaires_json() -> dict:
+    dir_path = Path(__file__).parent.parent
+    data_path = dir_path / "data/questionnaires.json"
+    with open(data_path, "r") as file:
+        return json.load(file)
 
 
 class Questionnaire:
@@ -23,17 +28,19 @@ class Questionnaire:
         self.prompt_template = str(json_data["prompt_template"])
 
     @staticmethod
+    def get_implemented_questionnaires():
+        questionnaire_json = _load_questionnaires_json()
+        return list(questionnaire_json.keys())
+
+    @staticmethod
     def load_questionnaire(name):
-        assert name in QUESTIONNAIRES, f"Questionnaire '{name}' not found."
-        dir_path = Path(__file__).parent.parent
-        data_path = dir_path / "data/questionnaires.json"
-        if name not in QUESTIONNAIRES:
+        questionnaire_json = _load_questionnaires_json()
+        implemented_questionnaires = list(questionnaire_json.keys())
+        if name not in implemented_questionnaires:
             raise ValueError(
-                f"Questionnaire '{name}' not found. Allowed questionnaires: {QUESTIONNAIRES}"
+                f"Questionnaire '{name}' not found. Allowed questionnaires: {implemented_questionnaires}"
             )
-        with open(data_path, "r") as file:
-            json_data = json.load(file)
-        return Questionnaire(name, json_data[name])
+        return Questionnaire(name, questionnaire_json[name])
 
     def get_question(self, idx):
         return self.questions[idx]
