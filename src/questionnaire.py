@@ -13,11 +13,11 @@ class Questionnaire:
 
     def __init__(self, name, json_data: dict):
         self.name = name
-        self.questions = json_data["questions"]
+        self.questions = list(json_data["questions"])
         self.current_question_idx = 0
-        self.allowed_answers = json_data["allowed_answers"]
+        self.allowed_answers = list(json_data["allowed_answers"])
         self.example_reply_accepted_answer = json_data["example_reply_accepted_answer"]
-        self.prompt_template = json_data["prompt_template"]
+        self.prompt_template = str(json_data["prompt_template"])
 
     @staticmethod
     def load_questionnaire(name):
