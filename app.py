@@ -83,6 +83,9 @@ def chat(sheet_helper: SH):
         if "questionnaire_finished" not in st.session_state:
             st.session_state.questionnaire_finished = False
 
+        if "upload_button_clicked" not in st.session_state:
+            st.session_state.upload_button_clicked = False
+
         # Display the messages using the message_to_markdown function
         for message in chatbox.messages_without_roles(Role.SYSTEM):
             message_to_markdown(message.role, message.content)
@@ -163,10 +166,15 @@ def chat(sheet_helper: SH):
             st.write("Du hast den Fragebogen abgeschlossen. Danke fürs Mitmachen!")
 
             # Button to upload the chat history to Google Sheets
-            if st.button("Auf Google Sheets hochladen"):
+            if st.button(
+                "Auf Google Sheets hochladen",
+                disabled=st.session_state.upload_button_clicked,
+            ):
                 data_to_upload = chatbox.to_google_sheet_format(questionnaire.name)
                 sheet_helper.upload_data(data_to_upload)
+                st.session_state.upload_button_clicked = True
                 st.success("Fragebogen erfolgreich hochgeladen!")
+                st.rerun()
 
         # Inject JavaScript to autofocus the chat input field
         components.html(
