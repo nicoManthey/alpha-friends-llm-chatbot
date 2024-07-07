@@ -8,7 +8,14 @@
         ],
         "questions": [
             "Wie oft fehlte Dir das Interesse oder Freude an Deinen Tätigkeiten?",
-            "Wie oft warst Du niedergeschlagen oder hoffnungslos?"
+            "Wie oft warst Du niedergeschlagen oder hoffnungslos?",
+            "Wie oft hattest Du Schlafprobleme oder hast zu viel geschlafen?",
+            "Wie oft warst Du müde oder energielos?",
+            "Wie häufig hattest Du weniger oder zu viel Appetit?",
+            "Wie oft hattest Du eine schlechte Meinung von Dir selbst?",
+            "Wie häufig hattest Du Schwierigkeiten Dich zu konzentrieren?",
+            "Wie oft hast Du Dich verlangsamt oder ruhelos gefühlt?",
+            "Wie häufig hattest Du lebensmüde Gedanken?"
         ],
         "questionnaire_short_description": "Der PHQ-9 ist ein Fragebogen, der die Schwere einer Depression bewertet.",
         "example_reply_accepted_answer": "Verstanden, ich notiere 'An einzelnen Tagen'.\nOkay, ich nehme auf 'Beinahe jeden Tag'\nDas schreibe ich als 'Überhaupt nicht' auf.",
