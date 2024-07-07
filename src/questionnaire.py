@@ -15,6 +15,9 @@ class Questionnaire:
         self.name = name
         self.questions = list(json_data["questions"])
         self.current_question_idx = 0
+        self.questionnaire_short_description = str(
+            json_data["questionnaire_short_description"]
+        )
         self.allowed_answers = list(json_data["allowed_answers"])
         self.example_reply_accepted_answer = json_data["example_reply_accepted_answer"]
         self.prompt_template = str(json_data["prompt_template"])
@@ -44,11 +47,14 @@ class Questionnaire:
     def get_current_question(self):
         return self.get_question(self.current_question_idx)
 
+    def get_current_question_id(self):
+        return self.current_question_idx + 1
+
     def get_allowed_answers(self):
         return self.allowed_answers
 
     def _get_allowed_answers_str(self):
-        return f"Erlaube Antworten: {', '.join(self.allowed_answers)}."
+        return ", ".join(self.allowed_answers) + "."
 
     def get_num_questions(self):
         return len(self.questions)
@@ -56,11 +62,15 @@ class Questionnaire:
     def _get_filled_prompt(self):
         replacements = {
             "questionnaire_name": self.name,
+            "questionnaire_short_description": self.questionnaire_short_description.format(
+                **{"questionnaire_name": self.name}
+            ),
             "allowed_answers": self._get_allowed_answers_str(),
-            "current_question": {self.get_current_question()},
+            "question_id_and_question": f"{self.get_current_question_id()}) {self.get_current_question()}",
             "example_reply_accepted_answer": self.example_reply_accepted_answer,
         }
         formatted_prompt = self.prompt_template.format(**replacements)
+        print(f"Formatted prompt: \n\n{formatted_prompt}")
         return formatted_prompt
 
     def get_prompt_and_question_message(self) -> list[ChatMessage]:
