@@ -57,8 +57,8 @@ class Questionnaire:
         replacements = {
             "questionnaire_name": self.name,
             "allowed_answers": self._get_allowed_answers_str(),
+            "current_question": {self.get_current_question()},
             "example_reply_accepted_answer": self.example_reply_accepted_answer,
-            "question_id_and_question": f"Aktuelle Frage: {self.get_current_question()}",
         }
         formatted_prompt = self.prompt_template.format(**replacements)
         return formatted_prompt
