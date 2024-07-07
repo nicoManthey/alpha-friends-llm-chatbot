@@ -63,8 +63,9 @@ class ChatBox:
         Only upload one sample at a time, i.e. from the last system message to the end."""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         question_id = 0
-        for message in self.messages:
-            if message.role == Role.SYSTEM:
+        messages = self.messages_without_roles(Role.SYSTEM)
+        for message in messages:
+            if message.role == Role.INFO:
                 question_id += 1
             message.question_id = question_id
         data = [
@@ -76,6 +77,6 @@ class ChatBox:
                 message.role,
                 message.content,
             ]
-            for message in self.messages
+            for message in messages
         ]
         return data

@@ -50,9 +50,6 @@ class Questionnaire:
     def _get_allowed_answers_str(self):
         return f"Erlaube Antworten: {', '.join(self.allowed_answers)}."
 
-    def get_system_prompt(self, idx):
-        return self.questions[idx] + self._get_allowed_answers_str()
-
     def get_num_questions(self):
         return len(self.questions)
 
