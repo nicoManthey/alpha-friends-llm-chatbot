@@ -6,7 +6,7 @@ import json
 
 from groq import Groq
 
-from src.chat_utils import ChatMessage
+from src.chat_utils import Role, ChatMessage
 
 
 dotenv.load_dotenv(dotenv.find_dotenv())
@@ -25,7 +25,7 @@ def get_groq_answer(messages: List[ChatMessage]):
         # Step 1: Find the index of the last 'system' message
         last_system_index = None
         for i in range(len(messages) - 1, -1, -1):
-            if messages[i].role == "system":
+            if messages[i].role == Role.SYSTEM:
                 last_system_index = i
                 break
 
@@ -37,18 +37,15 @@ def get_groq_answer(messages: List[ChatMessage]):
         messages = [
             message
             for message in messages
-            if message.role in ["user", "system", "assistant"]
+            if message.role in [Role.USER, Role.SYSTEM, Role.ASSISTANT]
         ]
         if not messages:
             raise ValueError("The messages list is empty.")
-        # if not all(message in ["user", "system", "assistant"] for message in messages):
-        #     input_roles = [message.role for message in messages]
-        #     raise ValueError(f"Invalid role in messages list. Input roles: {input_roles}.")
         if not len(messages) >= 2:
             raise ValueError("The messages list must contain at least 2 messages.")
-        if messages[0].role != "system":
+        if messages[0].role != Role.SYSTEM:
             raise ValueError("The first message must be of role 'system'.")
-        if messages[1].role != "user":
+        if messages[1].role != Role.USER:
             raise ValueError("The second message must be of role 'user'.")
         return messages
 

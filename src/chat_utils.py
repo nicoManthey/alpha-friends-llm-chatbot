@@ -1,14 +1,25 @@
 from typing import List
 from datetime import datetime
+from enum import Enum
 
 
-ROLES = ["user", "assistant", "info", "system"]
+class Role(str, Enum):
+    USER = "user"
+    ASSISTANT = "assistant"
+    INFO = "info"
+    SYSTEM = "system"
+
+    @classmethod
+    def allowed_roles(cls):
+        return [role.value for role in cls]
 
 
 class ChatMessage:
     def __init__(self, role, content):
-        if role not in ROLES:
-            raise ValueError(f"Role '{role}' not allowed. Choose from: {ROLES}")
+        if not isinstance(role, Role):
+            raise ValueError(
+                f"Role '{role}' not allowed. Choose from: {Role.allowed_roles()}"
+            )
         self.role = role
         self.content = content
         self.comment = None
@@ -32,15 +43,20 @@ class ChatBox:
     def replace_last_bot_message(self, new_content):
         """Replace the last bot message with the user's input."""
         for i in range(len(self.messages) - 1, -1, -1):
-            if self.messages[i].role == "assistant":
+            if self.messages[i].role == Role.ASSISTANT:
                 self.messages[i].content = new_content
                 break
-        if self.messages[-1].role == "info":
+        if self.messages[-1].role == Role.INFO:
             self.messages.pop()
 
-    def get_display_messages(self):
-        """Return messages that are supposed to be displayed in chat window."""
-        return [message for message in self.messages if message.role != "system"]
+    def messages_without_roles(self, *excluded_roles):
+        """Return messages excluding those with specified roles."""
+        excluded_roles_set = set(excluded_roles)
+        return [
+            message
+            for message in self.messages
+            if message.role not in excluded_roles_set
+        ]
 
     def to_google_sheet_format(self, questionnaire_name):
         """Return the chat history in a format suitable for Google Sheets upload.
@@ -48,7 +64,7 @@ class ChatBox:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         question_id = 0
         for message in self.messages:
-            if message.role == "system":
+            if message.role == Role.SYSTEM:
                 question_id += 1
             message.question_id = question_id
         data = [

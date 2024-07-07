@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 from src.streamlit_utils import message_to_markdown
-from src.chat_utils import ChatMessage, ChatBox
+from src.chat_utils import Role, ChatMessage, ChatBox
 from src.questionnaire import QUESTIONNAIRES, Questionnaire
 from src.google_sheet_helper import GSheetHelper as SH
 from src.groq_request import get_groq_answer
@@ -83,7 +83,7 @@ def chat(sheet_helper: SH):
             st.session_state.questionnaire_finished = False
 
         # Display the messages using the message_to_markdown function
-        for message in chatbox.get_display_messages():
+        for message in chatbox.messages_without_roles(Role.SYSTEM):
             message_to_markdown(message.role, message.content)
 
         if "user_gave_remark" not in st.session_state:
@@ -108,7 +108,7 @@ def chat(sheet_helper: SH):
                         if chat_input in QUESTIONNAIRES:
                             questionnaire = Questionnaire.load_questionnaire(chat_input)
                             bot_uttr = "Questionnaire was set to: " + questionnaire.name
-                            info_message = ChatMessage(role="info", content=bot_uttr)
+                            info_message = ChatMessage(role=Role.INFO, content=bot_uttr)
                             messages = [
                                 info_message
                             ] + questionnaire.get_prompt_and_question_message()
@@ -117,12 +117,12 @@ def chat(sheet_helper: SH):
                         # Handle LLM answer
                         else:
                             chatbox.add_messages(
-                                ChatMessage(role="user", content=chat_input)
+                                ChatMessage(role=Role.USER, content=chat_input)
                             )
                             bot_uttr = get_groq_answer(chatbox.messages)
                             # bot_uttr = endpoint_helper.get_llm_answer(chatbox.messages)
                             chatbox.add_messages(
-                                ChatMessage(role="assistant", content=bot_uttr)
+                                ChatMessage(role=Role.ASSISTANT, content=bot_uttr)
                             )
 
                             # Handle question was answered successfully

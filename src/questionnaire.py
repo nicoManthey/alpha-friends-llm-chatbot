@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 import json
 
-from src.chat_utils import ChatMessage
+from src.chat_utils import Role, ChatMessage
 
 QUESTIONNAIRES = ["PHQ-9"]
 
@@ -69,8 +69,8 @@ class Questionnaire:
     def get_prompt_and_question_message(self) -> list[ChatMessage]:
         "Get the system prompt and info message when starting a new questionnaire."
         first_messages = [
-            ChatMessage(role="system", content=self._get_filled_prompt()),
-            ChatMessage(role="info", content=self.get_current_question()),
+            ChatMessage(role=Role.SYSTEM, content=self._get_filled_prompt()),
+            ChatMessage(role=Role.INFO, content=self.get_current_question()),
         ]
         return first_messages
 
