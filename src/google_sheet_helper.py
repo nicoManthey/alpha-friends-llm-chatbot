@@ -1,5 +1,6 @@
 from pathlib import Path
 
+import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -60,3 +61,9 @@ class GSheetHelper:
         column_a_values = self.sheet.col_values(1)[1:]  # Start in cell A2
         unique_dates = set(column_a_values)
         return len(unique_dates)
+
+    def get_data(self):
+        """Return all data from the selected worksheet."""
+        if not self.sheet:
+            raise Exception("Sheet not selected. Call select_worksheet() first.")
+        return pd.DataFrame(self.sheet.get_all_records())
