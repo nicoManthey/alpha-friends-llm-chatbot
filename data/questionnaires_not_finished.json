@@ -1,0 +1,33 @@
+{
+    "Malmo_POTS": {
+        "allowed_answers": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "questionnaire_short_description": "Der {questionnaire_name} ist ein Fragebogen, der TODO BESCHREIBUNG.",
+        "example_reply_accepted_answer": "Verstanden, ich notiere 'TODO EXMPL RATINGS'.\n",
+        "questions": [
+            "Ohnmachtsgefühl (0 = gar nicht, 10 = extrem).",
+            "Schwindelgefühl beim Aufstehen (0 = gar nicht, 10 = extrem).",
+            "Herzklopfen (0 = gar nicht, 10 = extrem).",
+            "Ermüdbarkeit (0 = gar nicht, 10 = extrem).",
+            "Verminderte körperliche Leistungsfähigkeit (0 = gar nicht, 10 = extrem).",
+            "Kopfschmerzen (0 = gar nicht, 10 = extrem).",
+            "Gedächtnisprobleme (0 = gar nicht, 10 = extrem).",
+            "Übelkeit (0 = gar nicht, 10 = extrem).",
+            "Bauchschmerzen (0 = gar nicht, 10 = extrem).",
+            "Schwächegefühl in den Beinen (0 = gar nicht, 10 = extrem).",
+            "Schwächegefühl in den Armen (0 = gar nicht, 10 = extrem)."
+        ],
+        "prompt_template": "TODO"
+    }
+}
