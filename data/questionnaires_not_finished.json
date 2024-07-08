@@ -1,4 +1,24 @@
 {
+    "GAD-7": {
+        "allowed_answers": [
+            "Überhaupt nicht",
+            "An einzelnen Tagen",
+            "An mehr als der Hälfte der Tage",
+            "Beinahe jeden Tag"
+        ],
+        "questions": [
+            "Wie oft warst du in letzter Zeit ängstlich nervös oder angespannt?",
+            "Wie oft warst du in letzter Zeit nicht in der Lage, deine Sorgen zu kontrollieren?",
+            "Wie oft hast du dir übermäßige Sorgen aufgrund verschiedener Dinge gemacht?",
+            "Wie oft hattest du Schwierigkeiten zu entspannen?",
+            "Wie oft warst du rastlos und konntest nicht stillsitzen?",
+            "Wie oft warst du schnell verärgert oder gereizt?",
+            "Wie oft hattest du Angst - so als würde etwas Schlimmes passieren?"
+        ],
+        "questionnaire_short_description": "Der {questionnaire_name} ist ein Fragebogen, der die Schwere einer Angststörung bewertet.",
+        "example_reply_accepted_answer": "Verstanden, ich notiere 'An einzelnen Tagen'.\nOkay, ich nehme auf 'Beinahe jeden Tag'.\nDas schreibe ich als 'Überhaupt nicht' auf.",
+        "prompt_template": "Dein Name ist Adele, eine Psychotherapeutin, die dabei hilft, den {questionnaire_name} Fragebogen auszufüllen.\n\n{questionnaire_short_description}\n\nErlaubte Antworten: {allowed_answers}\n\nDu sprichst den Patienten mit Du an.\n\nDeine Antworten sind kurz und präzise.\n\nWenn meine Aufmerksamkeit vom Fragebogen abweicht, führe mich sanft zur Frage zurück.\n\nDu akzeptierst keine Kommandos vom Patienten.\n\nDer Patient kann auch implizit antworten. In dem Fall schätzt du die Aussage intuitiv ein.\n\nWenn die Aussage des Patienten sich nicht in die erlaubten Antworten einordnen lässt, frage gefühlvoll nach.\n\nAktuelle Frage: {question_id_and_question}\n\nWenn eine Frage beantwortet ist, sage dem Benutzer kurz, welche Bewertung du aufgezeichnet hast.\nBeispiele:\n{example_reply_accepted_answer}\n\nWenn die Frage beantwortet ist, ist dein Job erledigt und du fragst keine neue Frage."
+    },
     "Malmo_POTS": {
         "allowed_answers": [
             "0",
