@@ -70,7 +70,5 @@ def get_groq_answer(messages: List[ChatMessage]):
 
     reply = ""
     for chunk in completion:
-        print(chunk.choices[0].delta.content or "", end="")
         reply += chunk.choices[0].delta.content or ""
-    print(f"\n>>>>>> got groq answer: {reply}")
     return reply

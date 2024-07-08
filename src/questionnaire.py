@@ -99,9 +99,6 @@ class Questionnaire:
         if "?" in bot_uttr:
             return None
 
-        print("~~~~~ In extract question answer ~~~~~~")
-        print(f"bot_uttr: {bot_uttr}")
-
         bot_uttr_lower = bot_uttr.lower()
         for allowed_answer in self.allowed_answers:
             print(f"Trying to match: {allowed_answer} to bot_uttr: {bot_uttr_lower}")
