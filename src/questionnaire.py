@@ -74,10 +74,9 @@ class Questionnaire:
             ),
             "allowed_answers": self._get_allowed_answers_str(),
             "question_id_and_question": f"{self.get_current_question_id()}) {self.get_current_question()}",
-            "example_reply_accepted_answer": self.example_reply_accepted_answer,
+            # "example_reply_accepted_answer": self.example_reply_accepted_answer,
         }
         formatted_prompt = self.prompt_template.format(**replacements)
-        print(f"Formatted prompt: \n\n{formatted_prompt}")
         return formatted_prompt
 
     def get_prompt_and_question_message(self) -> list[ChatMessage]:

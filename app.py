@@ -29,7 +29,7 @@ Grüne Meldungen sind Benutzernachrichten.
 
 Graue Meldungen sind Bot-Meldungen des LLM.
 
-#### Erlaubte Antworten:
+#### Antwortoptionen des Fragebogens:
 {allowed_answers_str}
 
 #### Erläuterungen:
@@ -37,10 +37,6 @@ Graue Meldungen sind Bot-Meldungen des LLM.
 - Momentan benutzt der ChatBot das Language Model Llama 3 70b, bereitgestellt von der Firma Groq.
   Dabei wird Prompt Engineering eingesetzt, um die Qualität der Antworten zu verbessern.
   Auf lange Sicht wird das Modell durch ein speziell für diesen Zweck trainiertes Modell ersetzt.
-
-### TODOs:
-
-- GAD-7, Malmö-POTS Fragebögen hinzufügen
 """
 
 
