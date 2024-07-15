@@ -8,14 +8,8 @@ import huggingface_hub as hfh
 from huggingface_hub._inference_endpoints import InferenceEndpointStatus as IES
 from huggingface_hub.utils._errors import BadRequestError
 
+from src.load_env_vars import HF_TOKEN_WRITE, LLM_REPO_NAME
 from src.chat_utils import Role, ChatMessage
-
-
-dotenv.load_dotenv(dotenv.find_dotenv())
-env_vars = dotenv.dotenv_values()
-
-HF_TOKEN_WRITE = env_vars["HF_TOKEN_WRITE"]
-LLM_REPO_NAME = env_vars["LLM_REPO_NAME"]
 
 
 # hfh.login(token=HF_TOKEN_WRITE, write_permission=True)

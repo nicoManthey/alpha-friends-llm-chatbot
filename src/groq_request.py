@@ -6,14 +6,8 @@ import json
 
 from groq import Groq
 
+from src.load_env_vars import GROQ_API_KEY, GROQ_MODEL_NAME
 from src.chat_utils import Role, ChatMessage
-
-
-dotenv.load_dotenv(dotenv.find_dotenv())
-env_vars = dotenv.dotenv_values()
-
-GROQ_API_KEY = env_vars["GROQ_API_KEY"]
-GROQ_MODEL_NAME = env_vars["GROQ_MODEL_NAME"]
 
 
 def get_groq_answer(messages: List[ChatMessage]):
