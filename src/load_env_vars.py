@@ -1,9 +1,16 @@
-import dotenv
+import os
 
-dotenv.load_dotenv(dotenv.find_dotenv())
-env_vars = dotenv.dotenv_values()
+# Attempt to load environment variables from .env file if present, for local development
+try:
+    import dotenv
 
-HF_TOKEN_WRITE = env_vars["HF_TOKEN_WRITE"]
-LLM_REPO_NAME = env_vars["LLM_REPO_NAME"]
-G_SHEET_ID = env_vars["G_SHEET_ID"]
-GOOGLE_SHEETS = env_vars["GOOGLE_SHEETS"]
+    dotenv.load_dotenv(dotenv.find_dotenv())
+except ImportError:
+    # dotenv not installed, likely in production
+    pass
+
+# Access environment variables directly, works both locally and in hosted environments
+HF_TOKEN_WRITE = os.getenv("HF_TOKEN_WRITE")
+LLM_REPO_NAME = os.getenv("LLM_REPO_NAME")
+G_SHEET_ID = os.getenv("G_SHEET_ID")
+GOOGLE_SHEETS = os.getenv("GOOGLE_SHEETS")
