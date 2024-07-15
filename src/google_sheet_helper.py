@@ -1,10 +1,14 @@
 from pathlib import Path
+import json
+import base64
+from json import JSONDecodeError
+
 
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
 
-from src.load_env_vars import G_SHEET_ID
+from src.load_env_vars import G_SHEET_ID, GOOGLE_SHEETS
 
 root_dir = Path(__file__).resolve().parents[1]
 credentials_path = root_dir / "google_sheets_credentials.json"
@@ -20,11 +24,28 @@ class GSheetHelper:
         self.workbook = None
         self.sheet = None
 
+    def __load_credentials(self, base_64_encoded_str) -> dict:
+        """
+        Loads credentials from env
+        :return:
+        """
+
+        try:
+            cred_json = json.loads(base_64_encoded_str)
+        except (TypeError, JSONDecodeError):
+            creds_encoded_val = base_64_encoded_str
+            creds_decoded = base64.b64decode(creds_encoded_val).decode("utf-8")
+            cred_json = json.loads(creds_decoded)
+        return cred_json
+
     def authorize(self):
         """Authorize the Google Sheets API client."""
         scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-        creds = Credentials.from_service_account_file(
-            self.credentials_path, scopes=scopes
+        # creds = Credentials.from_service_account_file(
+        #     self.credentials_path, scopes=scopes
+        # )
+        creds = Credentials.from_service_account_info(
+            self.__load_credentials(GOOGLE_SHEETS), scopes=scopes
         )
         self.client = gspread.authorize(creds)
         self.workbook = self.client.open_by_key(self.sheet_id)
