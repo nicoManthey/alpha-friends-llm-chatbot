@@ -174,19 +174,19 @@ def chat(sheet_helper: SH):
                         update_session_state()
                         st.rerun()
 
-            # A form to handle user comments about the last bot message
-            with st.form(key="comment_form", clear_on_submit=True):
-                comment_input = st.text_input(
-                    "Dein Kommentar über die lezte Bot-Ausgabe:", key="comment_input"
-                )
-                if st.form_submit_button("Abschicken"):
-                    if comment_input:
-                        chatbox.messages[-1].comment = comment_input
-                        st.session_state.user_gave_remark = True
-                        update_session_state()
-                        st.rerun()
+        # A form to handle user comments about the last bot message
+        with st.form(key="comment_form", clear_on_submit=True):
+            comment_input = st.text_input(
+                "Dein Kommentar über die lezte Bot-Ausgabe:", key="comment_input"
+            )
+            if st.form_submit_button("Abschicken"):
+                if comment_input:
+                    chatbox.add_comment(comment_input)
+                    st.session_state.user_gave_remark = True
+                    update_session_state()
+                    st.rerun()
 
-        else:
+        if st.session_state.questionnaire_finished:
             st.write("Du hast den Fragebogen abgeschlossen. Danke fürs Mitmachen!")
 
             # Button to upload the chat history to Google Sheets

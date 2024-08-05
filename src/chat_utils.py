@@ -33,6 +33,13 @@ class ChatBox:
     def add_messages(self, *messages):
         self.messages += list(messages)
 
+    def add_comment(self, comment):
+        """Add a comment to the last assistant message."""
+        for i in range(len(self.messages) - 1, -1, -1):
+            if self.messages[i].role == Role.ASSISTANT:
+                self.messages[i].comment = comment
+                break
+
     def remove_last_message(self, role: str):
         """Remove the last message of the given role."""
         for i in range(len(self.messages) - 1, -1, -1):
