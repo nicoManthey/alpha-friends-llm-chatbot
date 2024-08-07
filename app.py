@@ -152,6 +152,7 @@ def chat(sheet_helper: SH):
                             ChatMessage(role=Role.USER, content=chat_input)
                         )
                         bot_uttr = get_groq_answer(chatbox.messages)
+                        # TO BE USED WHEN SWITCHED TO HF:
                         # bot_uttr = endpoint_helper.get_llm_answer(chatbox.messages)
                         chatbox.add_messages(
                             ChatMessage(role=Role.ASSISTANT, content=bot_uttr)
@@ -186,6 +187,19 @@ def chat(sheet_helper: SH):
                     update_session_state()
                     st.rerun()
 
+        # A form to handle user desired message about the last bot message
+        with st.form(key="desired_message_form", clear_on_submit=True):
+            comment_input = st.text_input(
+                "Die Bot message hätte so lauten sollen:", key="desired_message_input"
+            )
+            if st.form_submit_button("Abschicken"):
+                if comment_input:
+                    # chatbox.add_comment(comment_input)
+                    chatbox.add_desired_utterance(comment_input)
+                    st.session_state.user_gave_remark = True
+                    update_session_state()
+                    st.rerun()
+
         if st.session_state.questionnaire_finished:
             st.write("Du hast den Fragebogen abgeschlossen. Danke fürs Mitmachen!")
 
@@ -208,7 +222,7 @@ def chat(sheet_helper: SH):
             <script>
                 var input = window.parent.document.querySelectorAll("input[type=text]");
                 if (input.length >= 2) {{
-                    input[input.length - 2].focus();
+                    input[input.length - 3].focus();
                 }}
             </script>
             """,

@@ -23,6 +23,7 @@ class ChatMessage:
         self.role = role
         self.content = content
         self.comment = None
+        self.desired_utterance = None
         self.question_id = None
 
 
@@ -38,6 +39,13 @@ class ChatBox:
         for i in range(len(self.messages) - 1, -1, -1):
             if self.messages[i].role == Role.ASSISTANT:
                 self.messages[i].comment = comment
+                break
+
+    def add_desired_utterance(self, desired_utterance):
+        """Add the desired utterance to the last assistant message."""
+        for i in range(len(self.messages) - 1, -1, -1):
+            if self.messages[i].role == Role.ASSISTANT:
+                self.messages[i].desired_utterance = desired_utterance
                 break
 
     def remove_last_message(self, role: str):
@@ -81,6 +89,7 @@ class ChatBox:
                 questionnaire_name,
                 message.question_id,
                 message.comment,
+                message.desired_utterance,
                 message.role,
                 message.content,
             ]
