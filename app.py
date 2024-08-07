@@ -49,7 +49,7 @@ def main():
     if "sheet_helper" not in st.session_state:
         sheet_helper = SH()
         sheet_helper.authorize()
-        sheet_helper.select_worksheet("streamlit-app")
+        sheet_helper.select_worksheet("streamlit-app-desired-bot-utterance")
         st.session_state.sheet_helper = sheet_helper
     sheet_helper = st.session_state.sheet_helper
 
