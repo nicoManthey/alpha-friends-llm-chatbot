@@ -190,7 +190,8 @@ def chat(sheet_helper: SH):
         # A form to handle user desired message about the last bot message
         with st.form(key="desired_message_form", clear_on_submit=True):
             comment_input = st.text_input(
-                "Die Bot message hätte so lauten sollen:", key="desired_message_input"
+                "Schlechte Antwort des Systems? Schreibe eine bessere:",
+                key="desired_message_input",
             )
             if st.form_submit_button("Abschicken"):
                 if comment_input:
