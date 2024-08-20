@@ -24,6 +24,9 @@ class Questionnaire:
             json_data["questionnaire_short_description"]
         )
         self.allowed_answers = list(json_data["allowed_answers"])
+        self.allowed_answers_with_explanations = list(
+            json_data["allowed_answers_with_explanations"]
+        )
         self.example_reply_accepted_answer = json_data["example_reply_accepted_answer"]
         self.prompt_template = str(json_data["prompt_template"])
 
@@ -63,6 +66,9 @@ class Questionnaire:
     def _get_allowed_answers_str(self):
         return ", ".join(self.allowed_answers) + "."
 
+    def _get_allowed_answers_with_explanations_str(self):
+        return ", ".join(self.allowed_answers_with_explanations) + "."
+
     def get_num_questions(self):
         return len(self.questions)
 
@@ -72,7 +78,7 @@ class Questionnaire:
             "questionnaire_short_description": self.questionnaire_short_description.format(
                 **{"questionnaire_name": self.name}
             ),
-            "allowed_answers": self._get_allowed_answers_str(),
+            "allowed_answers_with_explanations": self._get_allowed_answers_with_explanations_str(),
             "question_id_and_question": f"{self.get_current_question_id()}) {self.get_current_question()}",
             # "example_reply_accepted_answer": self.example_reply_accepted_answer,
         }
