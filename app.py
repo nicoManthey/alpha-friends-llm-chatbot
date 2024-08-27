@@ -20,7 +20,7 @@ instructions = """
    auf Google Sheets hochladen kannst.
    Wenn du den klickst, können wir die Gesprächsdaten analysieren.
    Wir speichern dabei den Benutzer-Input, den Bot-Output und die Kommentare.
-   [Hier kannst du dir bisher gespeicherte Daten ansehen](https://docs.google.com/spreadsheets/d/1mx071HioSsIRDVRqv8CWm3VNxQS_cVKqZXSIxprourA/edit?gid=907089658#gid=907089658).
+   [Hier kannst du dir bisher gespeicherte Daten ansehen](https://docs.google.com/spreadsheets/d/1mx071HioSsIRDVRqv8CWm3VNxQS_cVKqZXSIxprourA/edit?gid=905343499#gid=905343499).
 
 
 Blaue Meldungen sind Info-Meldungen. Sie sind geskriptet, d.h. keine LLM-Ausgabe.
