@@ -31,7 +31,7 @@ RUN pip install --upgrade pip poetry
 RUN poetry install
 
 # Expose the port the app runs on
-EXPOSE 8501
+EXPOSE 8502
 
 # Specify the command to run the app
-CMD ["poetry", "run", "python3", "-m", "streamlit", "run", "app.py", "--server.port", "8501"]
+CMD ["poetry", "run", "python3", "-m", "streamlit", "run", "app.py", "--server.port", "8502"]
