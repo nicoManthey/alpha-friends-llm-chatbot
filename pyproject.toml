@@ -5,7 +5,7 @@ description = ""
 authors = ["Nico Manthey <your.email@example.com>"]
 
 [tool.poetry.dependencies]
-python = "3.11.9"
+python = "^3.11"
 gradio = "*"
 requests = "*"
 huggingface_hub = "*"
